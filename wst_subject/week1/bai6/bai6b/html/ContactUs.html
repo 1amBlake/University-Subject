@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devive-width", initial-scale="1.0">
+        <link rel="stylesheet" href='../css/de.css'>
+
+    </head>
+    <body>
+        <div id="box">
+            <h1>Contacs Us</h1>
+
+            <br>
+            <form>
+                <fieldset id="msgs">
+                    <legend>Your message:</legend>
+
+                    <div class="field-row">
+                        <label>To</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="field-row">
+                        <label>Your email</label>
+                        <input type="email">
+                    </div>
+
+                    <div class="field-row">
+                        <label>Message</label>
+                        <textarea rows="6" cols="50"></textarea>
+                    </div>
+
+                    <div class="field-row">
+                        <label>Attach File</label>
+                        <input type="file">
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>How you found us:</legend>
+                    <label for="app">How did you hear us</label>
+                    <select name="app" size="1" multiple>
+                        <option value="1">Facebook</option>
+                        <option value="2">Instagram</option>
+                        <option value="3">Lotus</option>
+                        <option value="4">Youtube</option>
+                        <option value="5">Ads</option>
+                        <option value="6">Friends or Family</option>
+                        <option value="7">Others</option>
+                    </select>
+
+                    <br>
+
+                    <label for="news" style="display: inline-block;">Newsletter</label>
+                    <input type="checkbox" name="news" id="news"> Ensure this box is checked if your would like to receive email updates
+                </fieldset>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </body>
+</html>

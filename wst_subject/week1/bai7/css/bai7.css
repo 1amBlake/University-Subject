@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+#border1{
+    width: 900px;
+    height: 900px;
+    border: 2px solid black;
+}
+#heading{
+    background-color: rgb(11, 169, 221);
+    width: 900px;
+    height: 100px;
+    align-content: center;
+}

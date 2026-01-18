@@ -1,0 +1,1 @@
+{"options":{"viewOn":"employees","pipeline":[{"$match":{"gender":"male"}},{"$project":{"acl":{"$numberInt":"0"},"employee_compensation":{"$numberInt":"0"}}}]},"indexes":[],"collectionName":"view_maleEmployee","type":"view"}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            #box{
+                width: 1200px;
+                border: 1px solid black;
+                padding: 1px;
+                text-align: center;
+            }
+            #row{
+                vertical-align: top;
+            }
+            #table{
+                border-style: outset;
+                border-color: purple;
+                border-width: 3px;
+            }
+            td, th, tr{
+                border-left: 1px solid gray; /* Blue vertical borders */
+                border-right: 1px solid gray; /* Blue vertical borders */
+            }
+            tr{
+                border-top: 1px solid gray; /* Blue vertical borders */
+                border-bottom: 1px solid gray; /* Blue vertical borders */
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "box">
+            <p>All time list in central</p>
+            <table border = 5 id = "table" cellspacing = "0">
+                <tr id = "row" align="center">
+                    <th><b>Time</b></th>
+                    <th><b>Monday</b></th>
+                    <th><b>Tuesday</b></th>
+                    <th><b>Wednesday</b></th>
+                    <th><b>Thursday</b></th>
+                    <th><b>Friday</b></th>
+                    <th><b>Saturday</b></th>
+                    <th><b>Sunday</b></th>
+                </tr>
+
+                <tr id = "row" align="left">
+                    <td align="center"><b>6:00</b></td>
+                    <td colspan="7">National News</td>
+                </tr>
+
+                <tr id = "row" align="left">
+                    <td align="center"><b>6:30</b></td>
+                    <td colspan="7">Local News</td>
+                </tr>
+
+                <tr id = "row"align="left">  
+                    <td align="center"><b>7:00</b></td>
+                    <td rowspan="2">Opera Fest</td>
+                    <td rowspan="2">Radio U</td>
+                    <td rowspan="2">Science</td>
+                    <td rowspan="2">The living world</td>
+                    <td>Word Play</td>
+                    <td>Agri Week</td>
+                    <td rowspan="2">Flok Fest</td>   
+                </tr>
+
+                <tr id = "row" align="left">  
+                    <td align="center"><b>7:30</b></td>
+                    <td>Brain Stew</td>
+                    <td>Bismark Forum</td>
+                </tr>
+
+                <tr id = "row" align="left">
+                    <td align="center"><b>8:00</b></td>
+                    <td colspan="4" rowspan="4">The Class musical connection</td>
+                    <td>Old time Radio</td>
+                    <td rowspan="4">Saturday Nite Jazz</td>
+                    <td rowspan="4">The Indie Connection</td>
+                </tr>
+
+                <tr id = "row" align="left">
+                    <td align="center"><b>8:30</b></td>
+                    <td>The Inner Mind</td>
+                </tr>
+
+                <tr id = "row" align="left">
+                    <td align="center"><b>9:00</b></td>
+                    <td>Open Mike Nite</td>
+                </tr>
+
+                <tr id = "row" align="left">
+                    <td align="center"><b>9:30</b></td>
+                    <td>Relax</td>  
+                </tr>
+
+                <tr id = "row" align="left">
+                    <td align="center"><b>10:00</b></td>
+                    <td colspan="7">World News Feed</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

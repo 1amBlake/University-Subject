@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+#border{
+    height: 600px;
+    width: 300px;
+    border: 3px solid lightblue
+}
+.margin-row{
+    margin-bottom: 20px;
+    margin-right: 90px;
+}
+.input-length{
+    width: 200px;
+}
+.submit-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    align-items:  center;
+}

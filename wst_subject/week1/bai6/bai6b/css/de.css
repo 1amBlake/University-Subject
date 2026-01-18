@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+#box{
+    width: 730px;
+    height: 470px;
+    border: 1px solid lightblue;
+}
+fieldset{
+    width: 700px;
+}
+label{
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+legend{
+    padding: 0 5px;
+    text-align:  left;
+}
+.field-row{
+    margin-bottom: 10px;
+}

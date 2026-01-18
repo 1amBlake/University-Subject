@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Registration Form</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0 auto;
+                
+            }
+            #table{
+                width: 350px;
+                border: 2px solid black;
+                border-radius: 12px;
+                overflow: hidden;
+                font-family: serif;
+                border-collapse: separate;
+                border-spacing: 0;
+            }
+
+            #top{
+                background: #01FFFF;
+                text-align: center;
+                vertical-align: bottom;
+                font-size: 36px;
+                font-weight: bold;
+                padding: 12px;
+                border-bottom: 7px solid black;
+            }
+
+            #bottom{
+                background: #01FFFF;
+                text-align: center;
+                font-size: 32px;
+                padding: 12px;
+            }
+            #main{
+                width:700px;
+                border: 3px solid black;
+                padding: 10px;
+            }
+            label{
+                text-align: left;
+            }
+            #heading{
+                text-align: center;
+            }
+            #form{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body style = "background-color: rgba(153, 205, 255);">
+        <div>
+            <table id="table">
+                <tr>
+                    <th id="top">Jackson</th>
+                </tr>
+                <tr>
+                    <td id="bottom">Electronics</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id = "main">
+            <br>
+
+            <div id = "heading">
+                <br>
+                <br>
+                <h1>Registration Form</h1>
+                <br>
+                <p>Register your Jackson Electronics product here</p>
+            </div>
+
+            
+            <div id = "form">
+                
+
+                <form method = "get" style="text-align: left;">
+                    <div id = "personal_Info">
+                        <label for = "first-name" style = "display: inline-block; 
+                        width: 200px">First Name: </label>
+                        <input type = "text" name = "fstname" id = "fstname">
+
+                        <label for = "last-name" style = "display: inline-block;
+                        width: 100">Last Name: </label>
+                        <input type = "text" name = "lstname" id = "lstname">
+                        
+                        <br>
+
+                        <label for = "address_1" style = "display: inline-block;
+                        width: 200px">Address #1: </label>
+                        <input type = "text" name = "adr1" id = "adr1">
+
+                        <br>
+
+                        <label for = "address_2" style = "display: inline-block;
+                        width: 200px">Address #2: </label>
+                        <input type = "text" name = "adr2" id = "adr2">
+                    
+                        <br>
+
+                        <label for = "city" style = "display:inline-block; width: 200px">
+                        City: </label>
+                        <input type = "text" name = "city" id = "city">
+
+                        <label for = "state" style = "display: inline-block; width: 100;">
+                        State: </label>
+                        <input type = "text" name = "state" id = "state" size = "10">
+
+                        <label for = "zip" style = "display: inline-block;">
+                        Zip: </label>
+                        <input type = "text" name = "zip" id = "zip" size = "5">
+
+                        <br>
+
+                        <label for = "country" style = "display:inline-block; width: 200px">
+                        Country: </label>
+                        <input type = "text" name = "country" id = "country">
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div id = "product">
+                        <label for = "product" style = "display: inline-block;
+                        width: 200px">Product: </label>
+                        <select name = "product">
+                            <optgroup>
+                                <option value = "scanmaster">ScanMaster</option>
+                                <option value = "lap-asus">Laptop Aus</option>
+                                <option value = "phone-samsung">Smartphone Samsung</option>
+                                <option value = "tv-lg">Smart TV LG</option>
+                                <option value = "wifirouter-tplink">WiFi Router TP-Link</option>
+                            </optgroup>
+                        </select>
+
+                        <br>
+
+                        <label for = "datePurchased" style = "display: inline-block; width: 200px;">
+                        Date Purchased: </label>
+                        <input type = "text" name="datePurchased" id = "datePurchased">
+
+                        <br>
+
+                        <label for = "serial" style = "display: inline-block; width: 200px;">
+                        Serial #: </label>
+                        <input type = "text" name="serial" id = "serial">
+                    
+                        <br>
+
+                        <label for = "used_for" style = "display: inline-block; width: 200px;">
+                        Used for: </label>
+                        <input type = "radio" id = "home" name = "product" value = "home" tabindex="5">
+                        Home 
+                        
+                        <input type = "radio" id = "edu_ins" name = "prfoduct" value = "edu" tabindex="5">
+                        Educational Institution
+                        <br>
+                        <p  style = "display:inline-block; width:200px;"></p>
+                        <input type="radio" id = "business" name="product" value="business" tabindex="5">
+                        Businnes
+                        
+                        <input type="radio" id = "other" name="product" value="other" tabindex="5">
+                        Other
+                        <br>
+                        <p  style = "display:inline-block; width:200px;"></p>
+                        <input type="radio" id = "government" name="product" value="gorvernment" tabindex="5">
+                        Gorvernment
+
+                        <br>
+
+                        <label for = "system" style="display: inline-block; width: 200px">
+                        System (check all that apply): </label>
+                        <input type = "checkbox" id="win" name = "win" value="Windows">
+                        Windows
+                        <input type = "checkbox" id="unix" name = "unix" value="UNIX">
+                        UNIX
+                        <br>
+                        <p  style = "display:inline-block; width:200px;"></p>
+                        <input type = "checkbox" id="mac" name = "mac" value="Macintosh">
+                        Macintosh
+                        <input type = "checkbox" id="other" name = "other" value="other">
+                        Other
+                    </div>
+                    
+                    <br>
+                    <hr>
+                    <br>
+
+                    <div id = "comment">
+                        <label for = "comment" style = "vertical-align: top; display: inline-block; width: 200px;">
+                        Comments?: </label>
+                        <textarea name="comment" rows="5" cols="50">
+                        </textarea>
+
+                        <br>
+                        
+                        <div style="text-align: center;">
+                        <input type = "submit" value = "Click to register">
+                        <input type="submit" value = "Click to cancel">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

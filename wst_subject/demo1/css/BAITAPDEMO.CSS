@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+h1{
+    color : blue;
+}
+p{
+    color : red;
+    text-align: justify;
+    text-shadow: 2px 2px 4px yellow;
+}
+#khung{
+    margin-top: 20px;
+    width : 500px;
+    border : 2px solid orange;
+    padding: 10px;
+    border-radius: 30px 16px 30px 16px;
+    box-shadow: 4px 4px 4px blue, -4px -4px 4px blue;
+}
+body{
+    background-image: url('E:/University/university_project/project_code/wst_subject/demo1/img/mtri.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}

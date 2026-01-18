@@ -1,0 +1,246 @@
+{"_id":1,"maLop":"DHCK17","tenLop":"Đại học Cơ khí 17","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2021,"maChuyenNganh":"N010"}
+{"_id":2,"maLop":"DHCTM17","tenLop":"Đại học Chế tạo máy 17","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2021,"maChuyenNganh":"N020"}
+{"_id":3,"maLop":"DHTKTR17","tenLop":"Đại học Thiết kế thời trang 17","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2021,"maChuyenNganh":"N040"}
+{"_id":4,"maLop":"DHKTPM17A","tenLop":"Đại học Kỹ thuật phần mềm 17A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2021,"maChuyenNganh":"N060"}
+{"_id":5,"maLop":"DHKTPM17B","tenLop":"Đại học Kỹ thuật phần mềm 17B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2021,"maChuyenNganh":"N060"}
+{"_id":6,"maLop":"DHKTPM17C","tenLop":"Đại học Kỹ thuật phần mềm 17C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2021,"maChuyenNganh":"N060"}
+{"_id":7,"maLop":"DHKHMT17A","tenLop":"Đại học Khoa học máy tính 17A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2021,"maChuyenNganh":"N070"}
+{"_id":8,"maLop":"DHKHMT17B","tenLop":"Đại học Khoa học máy tính 17B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2021,"maChuyenNganh":"N070"}
+{"_id":9,"maLop":"DHHTTT17","tenLop":"Đại học Hệ thống thông tin 17","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2021,"maChuyenNganh":"N080"}
+{"_id":10,"maLop":"DHKT9E","tenLop":"Đại  học Kế toán 9E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1410"}
+{"_id":11,"maLop":"DHQLMT8A","tenLop":"Đại  học quản lý TN và môi trường 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1420"}
+{"_id":12,"maLop":"DHAV6","tenLop":"Đại Học Anh Văn 6","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1430"}
+{"_id":13,"maLop":"DHAV7A","tenLop":"Đại Học Anh Văn 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1440"}
+{"_id":14,"maLop":"DHAV7B","tenLop":"Đại Học Anh Văn 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1450"}
+{"_id":15,"maLop":"DHAV8A","tenLop":"Đại học Anh văn 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1460"}
+{"_id":16,"maLop":"DHAV9A","tenLop":"Đại học Anh Văn 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1470"}
+{"_id":17,"maLop":"DHCT9A","tenLop":"Đại học Chế tạo máy 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1480"}
+{"_id":18,"maLop":"DHCT9B","tenLop":"Đại học Chế tạo máy 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1490"}
+{"_id":19,"maLop":"DHCT9C","tenLop":"Đại học Chế tạo máy 9C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1500"}
+{"_id":20,"maLop":"DHCK5B","tenLop":"Đại Học Cơ Khí 5B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1540"}
+{"_id":21,"maLop":"DHCK6A","tenLop":"Đại Học Cơ Khí 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1550"}
+{"_id":22,"maLop":"DHCK6B","tenLop":"Đại Học Cơ Khí 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1560"}
+{"_id":23,"maLop":"DHCK6C","tenLop":"Đại Học Cơ Khí 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1570"}
+{"_id":24,"maLop":"DHCK7A","tenLop":"Đại Học Cơ Khi 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1580"}
+{"_id":25,"maLop":"DHCK7B","tenLop":"Đại Học Cơ Khí 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1590"}
+{"_id":26,"maLop":"DHCK7C","tenLop":"Đại Học Cơ Khí 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1600"}
+{"_id":27,"maLop":"DHCK8A.","tenLop":"Đại học Cơ khí 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1610"}
+{"_id":28,"maLop":"DHCT9ATT","tenLop":"Đại học Cơ khí 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N1620"}
+{"_id":29,"maLop":"DHCT9ATT.","tenLop":"Đại học Cơ khí Chế tạo máy 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N1630"}
+{"_id":30,"maLop":"DHCT9BTT","tenLop":"Đại học Cơ khí Chế tạo máy 9B CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N1640"}
+{"_id":31,"maLop":"DHCT9BTT.","tenLop":"Đại học Cơ khí Chế tạo máy 9B CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N1650"}
+{"_id":32,"maLop":"DHMT6A","tenLop":"Đại Học Công Nghệ Môi Trường 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1660"}
+{"_id":33,"maLop":"DHMT6C","tenLop":"Đại Học Công Nghệ Môi Trường 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1670"}
+{"_id":34,"maLop":"DHMT7A","tenLop":"Đại Học Công Nghệ Môi Trường 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1680"}
+{"_id":35,"maLop":"DHMT7C","tenLop":"Đại Học Công Nghệ Môi Trường 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1690"}
+{"_id":36,"maLop":"DHDI6A","tenLop":"Đại Học Điện 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1710"}
+{"_id":37,"maLop":"DHDI6B","tenLop":"Đại Học Điện 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1720"}
+{"_id":38,"maLop":"DHDI7A","tenLop":"Đại học Điện 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1730"}
+{"_id":39,"maLop":"DHDI7B","tenLop":"Đại học Điện 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1740"}
+{"_id":40,"maLop":"DHDI7C","tenLop":"Đại học Điện 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1750"}
+{"_id":41,"maLop":"DHDI7K","tenLop":"Đại học Điện 7K","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1760"}
+{"_id":42,"maLop":"DHDI8A","tenLop":"Đại học Điện 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1770"}
+{"_id":43,"maLop":"DHDI9A","tenLop":"Đại học Điện 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1780"}
+{"_id":44,"maLop":"DHDI9B","tenLop":"Đại học Điện 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1790"}
+{"_id":45,"maLop":"DHDI9C","tenLop":"Đại học Điện 9C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1800"}
+{"_id":46,"maLop":"DHDKTD9A","tenLop":"Đại học Điện điều khiển tự động 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1810"}
+{"_id":47,"maLop":"DHDKTD9B","tenLop":"Đại học Điện điều khiển tự động 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1820"}
+{"_id":48,"maLop":"DHDT6A","tenLop":"Đại Học Điện Tử 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1840"}
+{"_id":49,"maLop":"DHDT6B","tenLop":"Đại Học Điện Tử 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1850"}
+{"_id":50,"maLop":"DHDT7A","tenLop":"Đại Học Điện Tử 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1860"}
+{"_id":51,"maLop":"DHDT7B","tenLop":"Đại Học Điện Tử 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1870"}
+{"_id":52,"maLop":"DHDTTD8A","tenLop":"Đại học Điện tử Điện tử tự động 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1880"}
+{"_id":53,"maLop":"DHDTVT8A","tenLop":"Đại học Điện tử Viễn thông 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1890"}
+{"_id":54,"maLop":"DHDTVT9A","tenLop":"Đại học Điện tử Viễn thông 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1900"}
+{"_id":55,"maLop":"DHDTVT9B","tenLop":"Đại học Điện tử Viễn thông 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N1910"}
+{"_id":56,"maLop":"DHDKTD8ANA","tenLop":"Đại học điều khiển Tự động","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1920"}
+{"_id":57,"maLop":"DHDKTD8A","tenLop":"Đại học Điều khiển tự động 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1930"}
+{"_id":58,"maLop":"DHHO7","tenLop":"Đại Học Hóa 7","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N1940"}
+{"_id":59,"maLop":"DHHO8A","tenLop":"Đại học Hóa 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N1950"}
+{"_id":60,"maLop":"DHHO9A","tenLop":"Đại học Hóa 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N1960"}
+{"_id":61,"maLop":"DHHO9ATT","tenLop":"Đại học Hóa 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N1970"}
+{"_id":62,"maLop":"DHHO9B","tenLop":"Đại học Hóa 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N1980"}
+{"_id":63,"maLop":"DHHO9BTT","tenLop":"Đại học Hóa 9B CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N1990"}
+{"_id":64,"maLop":"DHHD6","tenLop":"Đại Học Hóa Dầu 6","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2000"}
+{"_id":65,"maLop":"DHHD6B","tenLop":"Đại học hóa dầu 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2010"}
+{"_id":66,"maLop":"DHHD7","tenLop":"Đại Học Hóa Dầu 7","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2020"}
+{"_id":67,"maLop":"DHHD8A","tenLop":"Đại học Hóa dầu 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2030"}
+{"_id":68,"maLop":"DHPT6","tenLop":"Đại Học Hóa Phân Tích 6","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2040"}
+{"_id":69,"maLop":"DHPT7","tenLop":"Đại Học Hóa Phân Tích 7","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2050"}
+{"_id":70,"maLop":"DHHC6","tenLop":"Đại Học Hữu Cơ 6","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2060"}
+{"_id":71,"maLop":"DHHC6B","tenLop":"Đại học Hữu cơ 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2070"}
+{"_id":72,"maLop":"DHKT6A","tenLop":"Đại Học Kế Toán 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2080"}
+{"_id":73,"maLop":"DHKT6B","tenLop":"Đại Học Kế Toán 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2090"}
+{"_id":74,"maLop":"DHKT6C","tenLop":"Đại Học Kế Toán 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2100"}
+{"_id":75,"maLop":"DHKT6D","tenLop":"Đại Học Kế Toán 6D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2110"}
+{"_id":76,"maLop":"DHKT6E","tenLop":"Đại Học Kế Toán 6E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2120"}
+{"_id":77,"maLop":"DHKT7A","tenLop":"Đại Học Kế Toán 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2130"}
+{"_id":78,"maLop":"DHKT7B","tenLop":"Đại Học Kế Toán 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2140"}
+{"_id":79,"maLop":"DHKT7C","tenLop":"Đại Học Kế Toán 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2150"}
+{"_id":80,"maLop":"DHKT7D","tenLop":"Đại Học Kế Toán 7D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2160"}
+{"_id":81,"maLop":"DHKT7K.","tenLop":"Đại học Kế toán 7K.","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2170"}
+{"_id":82,"maLop":"DHKT8A","tenLop":"Đại học Kế toán 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2180"}
+{"_id":83,"maLop":"DHKT8ATT","tenLop":"Đại học Kế toán 8A Tiên tiến","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N2190"}
+{"_id":84,"maLop":"DHKT8B","tenLop":"Đại học Kế toán 8B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2200"}
+{"_id":85,"maLop":"DHKT8BTT","tenLop":"Đại học Kế toán 8B Tiên tiến","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N2210"}
+{"_id":86,"maLop":"DHKT8C","tenLop":"Đại học Kế toán 8C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2220"}
+{"_id":87,"maLop":"DHKT8D","tenLop":"Đại học Kế toán 8D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2230"}
+{"_id":88,"maLop":"DHKT8E","tenLop":"Đại học Kế toán 8E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2240"}
+{"_id":89,"maLop":"DHKT8F","tenLop":"Đại học Kế toán 8F","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2250"}
+{"_id":90,"maLop":"DHKT9A","tenLop":"Đại học Kế toán 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2260"}
+{"_id":91,"maLop":"DHKT9ATT","tenLop":"Đại học Kế toán 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N2270"}
+{"_id":92,"maLop":"DHKT9B","tenLop":"Đại học Kế toán 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2280"}
+{"_id":93,"maLop":"DHKT9BTT","tenLop":"Đại học Kế toán 9B CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N2290"}
+{"_id":94,"maLop":"DHKT9C","tenLop":"Đại học Kế toán 9C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2300"}
+{"_id":95,"maLop":"DHKT9CTT","tenLop":"Đại học Kế toán 9C CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N2310"}
+{"_id":96,"maLop":"DHKT9D","tenLop":"Đại học Kế toán 9D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2320"}
+{"_id":97,"maLop":"DHKT9DTT","tenLop":"Đại học Kế toán 9D CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N2330"}
+{"_id":98,"maLop":"DHKT9F","tenLop":"Đại học Kế toán 9F","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2340"}
+{"_id":99,"maLop":"DHKD6A","tenLop":"Đại Học Kinh Doanh Du Lịch 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2350"}
+{"_id":100,"maLop":"DHKD6B","tenLop":"Đại Học Kinh Doanh Du Lịch 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2360"}
+{"_id":101,"maLop":"DHKD6C","tenLop":"Đại Học Kinh Doanh Du Lịch 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2370"}
+{"_id":102,"maLop":"DHKD7A","tenLop":"Đại Học Kinh Doanh Du Lịch 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2380"}
+{"_id":103,"maLop":"DHKD7B","tenLop":"Đại Học Kinh Doanh Du Lịch 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2390"}
+{"_id":104,"maLop":"DHKQ6A","tenLop":"Đại Học Kinh Doanh Quốc Tế 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2400"}
+{"_id":105,"maLop":"DHKQ6B","tenLop":"Đại Học Kinh Doanh Quốc Tế 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2410"}
+{"_id":106,"maLop":"DHKQ6C","tenLop":"Đại Học Kinh Doanh Quốc Tế 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2420"}
+{"_id":107,"maLop":"DHKQ6D","tenLop":"Đại học Kinh doanh Quốc tế 6D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2430"}
+{"_id":108,"maLop":"DHKQ7A","tenLop":"Đại Học Kinh Doanh Quốc Tế 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2440"}
+{"_id":109,"maLop":"DHKQ7B","tenLop":"Đại Học Kinh Doanh Quốc Tế 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2450"}
+{"_id":110,"maLop":"DHKQ8A","tenLop":"Đại học Kinh doanh Quốc tế 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2460"}
+{"_id":111,"maLop":"DHKQ8B","tenLop":"Đại học Kinh doanh Quốc tế 8B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2470"}
+{"_id":112,"maLop":"DHMK7A","tenLop":"Đại Học Marketing 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2480"}
+{"_id":113,"maLop":"DHMK7B","tenLop":"Đại Học Marketing 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2490"}
+{"_id":114,"maLop":"DHMK7C","tenLop":"Đại Học Marketing 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2500"}
+{"_id":115,"maLop":"DHMK8A.","tenLop":"Đại học Marketing 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2510"}
+{"_id":116,"maLop":"DHMT8A","tenLop":"Đại học Môi trường 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2530"}
+{"_id":117,"maLop":"DHMT9A","tenLop":"Đại học Môi trường 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2540"}
+{"_id":118,"maLop":"DHMT9ATT","tenLop":"Đại học Môi trường 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N2550"}
+{"_id":119,"maLop":"DHMT9B","tenLop":"Đại học Môi trường 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2560"}
+{"_id":120,"maLop":"DHNL9B","tenLop":"Đại học Nhiệt  Lạnh 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2570"}
+{"_id":121,"maLop":"DHNL6","tenLop":"Đại Học Nhiệt Lạnh 6","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2580"}
+{"_id":122,"maLop":"DHNL7","tenLop":"Đại Học Nhiệt Lạnh 7","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2590"}
+{"_id":123,"maLop":"DHNL8A","tenLop":"Đại học Nhiệt Lạnh 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2600"}
+{"_id":124,"maLop":"DHNL9A","tenLop":"Đại Học Nhiệt Lạnh 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2610"}
+{"_id":125,"maLop":"DHNL9C","tenLop":"Đại học Nhiệt Lạnh 9C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2620"}
+{"_id":126,"maLop":"DHOT6A","tenLop":"Đại Học Ô Tô 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2630"}
+{"_id":127,"maLop":"DHOT6B","tenLop":"Đại Học Ô Tô 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2640"}
+{"_id":128,"maLop":"DHOT7A","tenLop":"Đại Học Ô Tô 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2650"}
+{"_id":129,"maLop":"DHOT7B","tenLop":"Đại Học Ô Tô 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2660"}
+{"_id":130,"maLop":"DHOT7C","tenLop":"Đại Học Ô Tô 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2670"}
+{"_id":131,"maLop":"DHOT8A","tenLop":"Đại học Ô tô 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2680"}
+{"_id":132,"maLop":"DHOT9A","tenLop":"Đại Học Ô tô 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2690"}
+{"_id":133,"maLop":"DHOT9B","tenLop":"Đại Học Ô Tô 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2700"}
+{"_id":134,"maLop":"DHOT8B","tenLop":"Đại học Ôtô 8B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N2710"}
+{"_id":135,"maLop":"DHMT6B","tenLop":"Đại Học Quản Lý Môi Trường 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2740"}
+{"_id":136,"maLop":"DHMT6D","tenLop":"Đại Học Quản Lý Môi Trường 6D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2750"}
+{"_id":137,"maLop":"DHMT7B","tenLop":"Đại Học Quản lý Môi Trường 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2760"}
+{"_id":138,"maLop":"DHQLMT9A","tenLop":"Đại học Quản lý môi trường 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2770"}
+{"_id":139,"maLop":"DHKS8A","tenLop":"Đại học Quản trị  khách sạn","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N2780"}
+{"_id":140,"maLop":"DHLH8A","tenLop":"Đại học Quản trị Du lịch và Lữ hành 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2920"}
+{"_id":141,"maLop":"DHKS9A","tenLop":"Đại học Quản trị Khách Sạn 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2930"}
+{"_id":142,"maLop":"DHQT9A","tenLop":"Đại học Quản trị Kinh doanh 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N2940"}
+{"_id":143,"maLop":"DHQT9ATT","tenLop":"Đại học Quản trị Kinh doanh 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N2950"}
+{"_id":144,"maLop":"DHQT9B","tenLop":"Đại học Quản trị Kinh doanh 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N2960"}
+{"_id":145,"maLop":"DHQT9BTT","tenLop":"Đại học Quản trị Kinh doanh 9B-CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N2970"}
+{"_id":146,"maLop":"DHQT9C","tenLop":"Đại học Quản Trị Kinh doanh 9C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N2980"}
+{"_id":147,"maLop":"DHQT9DTT","tenLop":"Đại học Quản trị Kinh doanh 9D CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N2990"}
+{"_id":148,"maLop":"DHQT9E","tenLop":"Đại học Quản trị Kinh doanh 9E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3000"}
+{"_id":149,"maLop":"DHQT9ETT","tenLop":"Đại học Quản trị Kinh doanh 9E CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3010"}
+{"_id":150,"maLop":"DHKD7C","tenLop":"Đại học Quản trị Kinh doanh Du lịch 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3020"}
+{"_id":151,"maLop":"DHKQ9A","tenLop":"Đại học Quản Trị Kinh doanh Quốc Tế 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3030"}
+{"_id":152,"maLop":"HUI-BBA 6A","tenLop":"Đại Học Quản Trị Kinh Doanh Tiên Tiến 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3040"}
+{"_id":153,"maLop":"HUI-BBA 6B","tenLop":"Đại Học Quản Trị Kinh Doanh Tiên Tiến 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3050"}
+{"_id":154,"maLop":"HUI-BBA7A","tenLop":"Đại Học Quản Trị Kinh Doanh Tiên Tiến 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3060"}
+{"_id":155,"maLop":"HUI-BBA7B","tenLop":"Đại Học Quản Trị Kinh Doanh Tiên Tiến 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N3070"}
+{"_id":156,"maLop":"DHTN8E.","tenLop":"Đại học tài chánh ngân hàng 8E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3150"}
+{"_id":157,"maLop":"DHTD6A","tenLop":"Đại Học Tài Chính Doanh Nghiệp 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3160"}
+{"_id":158,"maLop":"DHTD6B","tenLop":"Đại Học Tài Chính Doanh Nghiệp 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3170"}
+{"_id":159,"maLop":"DHTD7A","tenLop":"Đại Học Tài Chính Doanh Nghiệp 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3180"}
+{"_id":160,"maLop":"DHTD7B","tenLop":"Đại Học Tài Chính Doanh Nghiệp 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3190"}
+{"_id":161,"maLop":"DHTD7C","tenLop":"Đại Học Tài Chính Doanh Nghiệp 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3200"}
+{"_id":162,"maLop":"DHTD8A.","tenLop":"Đại học Tài chính Doanh nghiệp 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3210"}
+{"_id":163,"maLop":"DHTD8ATT.","tenLop":"Đại học tài chính doanh nghiệp 8A Tiên tiến","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3220"}
+{"_id":164,"maLop":"DHTD9A","tenLop":"Đại học tài chính doanh nghiệp 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3230"}
+{"_id":165,"maLop":"DHTD9ATT","tenLop":"Đại học Tài chính doanh nghiệp 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N3240"}
+{"_id":166,"maLop":"DHTD9BTT","tenLop":"Đại học Tài chính doanh nghiệp 9B CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N3250"}
+{"_id":167,"maLop":"DHTN6A","tenLop":"Đại Học Tài Chính Ngân Hàng 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3260"}
+{"_id":168,"maLop":"DHTN6B","tenLop":"Đại Học Tài Chính Ngân Hàng 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3270"}
+{"_id":169,"maLop":"DHTN6C","tenLop":"Đại Học Tài Chính Ngân Hàng 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3280"}
+{"_id":170,"maLop":"DHTN6D","tenLop":"Đại Học Tài Chính Ngân Hàng 6D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3290"}
+{"_id":171,"maLop":"DHTN6E","tenLop":"Đại Học Tài Chính Ngân Hàng 6E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3300"}
+{"_id":172,"maLop":"DHTN7A","tenLop":"Đại Học Tài Chính Ngân Hàng 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3310"}
+{"_id":173,"maLop":"DHTN7B","tenLop":"Đại Học Tài Chính Ngân Hàng 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3320"}
+{"_id":174,"maLop":"DHTN7C","tenLop":"Đại Học Tài Chính Ngân Hàng 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3330"}
+{"_id":175,"maLop":"DHTN7K.","tenLop":"Đại học Tài Chính Ngân Hàng 7K.","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3340"}
+{"_id":176,"maLop":"DHTN8A","tenLop":"Đại học Tài chính Ngân hàng 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3350"}
+{"_id":177,"maLop":"DHTN8ATT","tenLop":"Đại học Tài chính Ngân hàng 8A Tiên tiến","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N3360"}
+{"_id":178,"maLop":"DHTN8B","tenLop":"Đại học Tài chính Ngân hàng 8B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3370"}
+{"_id":179,"maLop":"DHTN8BTT","tenLop":"Đại học Tài chính Ngân hàng 8B Tiên tiến","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N3380"}
+{"_id":180,"maLop":"DHTN8D.","tenLop":"Đại học tài chính Ngân hàng 8D.","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3390"}
+{"_id":181,"maLop":"DHTN8F.","tenLop":"Đại học Tài chính Ngân hàng 8F","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3400"}
+{"_id":182,"maLop":"DHTN9A","tenLop":"Đại học Tài chính ngân hàng 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3410"}
+{"_id":183,"maLop":"DHTN9ATT","tenLop":"Đại học Tài chính ngân hàng 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N3420"}
+{"_id":184,"maLop":"DHTN9B","tenLop":"Đại học Tài chính Ngân hàng 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N3430"}
+{"_id":185,"maLop":"DHTN9BTT","tenLop":"Đại học Tài chính ngân hàng 9B CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N3440"}
+{"_id":186,"maLop":"DHTN9C","tenLop":"Đại học Tài chính Ngân hàng 9C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N3450"}
+{"_id":187,"maLop":"DHTN9CTT","tenLop":"Đại học Tài chính ngân hàng 9C CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N3460"}
+{"_id":188,"maLop":"DHTN9D","tenLop":"Đại học Tài chính Ngân hàng 9D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3470"}
+{"_id":189,"maLop":"DHTKTR8A","tenLop":"Đại học Thiết kế thời trang 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N3510"}
+{"_id":190,"maLop":"DHTKTR9A","tenLop":"Đại học Thiết kế thời trang 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3520"}
+{"_id":191,"maLop":"DHTR6A","tenLop":"Đại Học Thời Trang 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3530"}
+{"_id":192,"maLop":"DHTR6B","tenLop":"Đại Học Thời Trang 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3540"}
+{"_id":193,"maLop":"DHTR7A","tenLop":"Đại Học Thời Trang 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3550"}
+{"_id":194,"maLop":"DHTR7B","tenLop":"Đại Học Thời Trang 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3560"}
+{"_id":195,"maLop":"DHTR8A","tenLop":"Đại học Thời trang 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3570"}
+{"_id":196,"maLop":"DHTR9A","tenLop":"Đại học Thời trang 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3580"}
+{"_id":197,"maLop":"DHTR9B","tenLop":"Đại học Thời trang 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3590"}
+{"_id":198,"maLop":"DHTP6A","tenLop":"Đại Học Thực Phẩm 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3600"}
+{"_id":199,"maLop":"DHTP6B","tenLop":"Đại Học Thực Phẩm 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3610"}
+{"_id":200,"maLop":"DHTP6C","tenLop":"Đại Học Thực Phẩm 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3620"}
+{"_id":201,"maLop":"DHTP7A","tenLop":"Đại Học Thực Phẩm 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3630"}
+{"_id":202,"maLop":"DHTP7B","tenLop":"Đại Học Thực Phẩm 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3640"}
+{"_id":203,"maLop":"DHTP7K","tenLop":"Đại học Thực phẩm 7K","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3650"}
+{"_id":204,"maLop":"DHTP8A","tenLop":"Đại học Thực phẩm 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3660"}
+{"_id":205,"maLop":"DHTP8B","tenLop":"Đại học Thực phẩm 8B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3670"}
+{"_id":206,"maLop":"DHTP9A","tenLop":"Đại Học Thực Phẩm 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N3680"}
+{"_id":207,"maLop":"DHTP9ATT","tenLop":"Đại học Thực phẩm 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N3690"}
+{"_id":208,"maLop":"DHTP9B","tenLop":"Đại học Thực phẩm 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3700"}
+{"_id":209,"maLop":"DHTMDT6CT2","tenLop":"Đại học Thương mại điện tử 6","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3710"}
+{"_id":210,"maLop":"DHTMDT7CT2","tenLop":"Đại học Thương mại điện tử 7","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N3720"}
+{"_id":211,"maLop":"DHTMDT8CT2","tenLop":"Đại học Thương mại điện tử 8","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3730"}
+{"_id":212,"maLop":"DHTMDT9A","tenLop":"Đại học Thương mại Điện tử 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3740"}
+{"_id":213,"maLop":"DHTMDT9B","tenLop":"Đại học Thương mại Điện tử 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3750"}
+{"_id":214,"maLop":"HUI-BAA 6A","tenLop":"Đại Học Tiên Tiến Kế Toán 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N3760"}
+{"_id":215,"maLop":"HUI-BAA 6B","tenLop":"Đại Học Tiên Tiến Kế Toán 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3770"}
+{"_id":216,"maLop":"HUI-BAA7A","tenLop":"Đại Học Tiên Tiến Kế Toán 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3780"}
+{"_id":217,"maLop":"HUI-BAA7B","tenLop":"Đại Học Tiên Tiến Kế Toán 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N3790"}
+{"_id":218,"maLop":"HUI-BFB 6A","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N3810"}
+{"_id":219,"maLop":"HUI-BFB 6B","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N3820"}
+{"_id":220,"maLop":"HUI-BFB 6C","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N3830"}
+{"_id":221,"maLop":"HUI-BFB 6D","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 6D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2014,"maChuyenNganh":"N3840"}
+{"_id":222,"maLop":"HUI-BFB 6E","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 6E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N3850"}
+{"_id":223,"maLop":"HUI-BFB 6F","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 6F","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N3860"}
+{"_id":224,"maLop":"HUI-BFB7A","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3870"}
+{"_id":225,"maLop":"HUI-BFB7B","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2010,"maChuyenNganh":"N3880"}
+{"_id":226,"maLop":"HUI-BFB7C","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N3890"}
+{"_id":227,"maLop":"HUI-BFB7D","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 7D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N3900"}
+{"_id":228,"maLop":"HUI-BFB7E","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 7E","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2012,"maChuyenNganh":"N3910"}
+{"_id":229,"maLop":"HUI-BFB7F","tenLop":"Đại Học Tiên Tiến Tài Chính Ngân Hàng 7F","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N3920"}
+{"_id":230,"maLop":"DHTH6A","tenLop":"Đại Học Tin Học 6A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N3930"}
+{"_id":231,"maLop":"DHTH6B","tenLop":"Đại Học Tin Học 6B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2013,"maChuyenNganh":"N3940"}
+{"_id":232,"maLop":"DHTH6C","tenLop":"Đại Học Tin Học 6C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3950"}
+{"_id":233,"maLop":"DHTH6D","tenLop":"Đại Học Tin Học 6D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3960"}
+{"_id":234,"maLop":"DHTH7A","tenLop":"Đại Học Tin Học 7A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N3970"}
+{"_id":235,"maLop":"DHTH7B","tenLop":"Đại Học Tin Học 7B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3980"}
+{"_id":236,"maLop":"DHTH7C","tenLop":"Đại Học Tin Học 7C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N3990"}
+{"_id":237,"maLop":"DHTH8A","tenLop":"Đại học Tin học 8A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2010,"maChuyenNganh":"N4000"}
+{"_id":238,"maLop":"DHTH8B","tenLop":"Đại học Tin học 8B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2011,"maChuyenNganh":"N4010"}
+{"_id":239,"maLop":"DHTH8B.","tenLop":"Đại học Tin học 8B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2014,"maChuyenNganh":"N4020"}
+{"_id":240,"maLop":"DHTH8C","tenLop":"Đại học Tin học 8C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N4030"}
+{"_id":241,"maLop":"DHTH9A","tenLop":"Đại Học Tin học 9A","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N4040"}
+{"_id":242,"maLop":"DHTH9ATT","tenLop":"Đại học Tin học 9A CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2013,"maChuyenNganh":"N4050"}
+{"_id":243,"maLop":"DHTH9B","tenLop":"Đại Học Tin Học 9B","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N4060"}
+{"_id":244,"maLop":"DHTH9BTT","tenLop":"Đại học Tin học 9B CLC","chuongTrinhHoc":{"heDT":"DH","loaiDT":"TT"},"khoaHoc":2011,"maChuyenNganh":"N4070"}
+{"_id":245,"maLop":"DHTH9C","tenLop":"Đại học Tin Học 9C","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N4080"}
+{"_id":246,"maLop":"DHTH9D","tenLop":"Đại Học Tin học 9D","chuongTrinhHoc":{"heDT":"DH","loaiDT":"CQ"},"khoaHoc":2012,"maChuyenNganh":"N4090"}
