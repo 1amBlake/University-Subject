@@ -20,8 +20,9 @@ public class Demo_2_PanelandButton extends JFrame implements ActionListener {
 	public Demo_2_PanelandButton() {
 		// phan1
 		setTitle("Demo pannel");
-		setSize(400, 250);
+		setSize(300, 150);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setResizable(false);
 		JPanel p = new JPanel(); // create Jpannel
 		// set border of jpannel
 		p.setBorder(BorderFactory.createTitledBorder("This is my panel"));
@@ -58,8 +59,8 @@ public class Demo_2_PanelandButton extends JFrame implements ActionListener {
 		if (o.equals(btnExit))
 			System.exit(0);
 		else {
-			int pass = Integer.parseInt(txtPass.getText());
-			if (pass == 123)
+			String pass = txtPass.getText();
+			if (pass.equals("123"))
 				JOptionPane.showMessageDialog(this, "dung pass");
 			else {
 				JOptionPane.showMessageDialog(this, "sai pass");
