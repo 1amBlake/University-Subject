@@ -1,8 +1,9 @@
-package demo_week4;
+package demo_week3;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -10,22 +11,20 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Demo4 extends JFrame implements ActionListener {
+public class Demo_2_PanelandButton extends JFrame implements ActionListener {
 	private JTextField txtUser;
 	private JTextField txtPass;
 	private JButton btnLogin;
 	private JButton btnExit;
 
-	public Demo4() {
+	public Demo_2_PanelandButton() {
 		// phan1
 		setTitle("Demo pannel");
-		setSize(300, 175);
+		setSize(400, 250);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setResizable(false);
 		JPanel p = new JPanel(); // create Jpannel
 		// set border of jpannel
-		// p.setBorder(BorderFactory.createTitledBorder("This is my panel"));
-		// p.set;
+		p.setBorder(BorderFactory.createTitledBorder("This is my panel"));
 		this.add(p); // put panel to jframe
 
 		// phan2
@@ -49,7 +48,7 @@ public class Demo4 extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) throws Exception {
-		new Demo4().setVisible(true);
+		new Demo_2_PanelandButton().setVisible(true);
 	}
 
 	@Override
