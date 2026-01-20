@@ -23,21 +23,43 @@
 }
 #menu-horizone{
     width: 100%;
-    height: 40px;
+    height: 42px;
     border-bottom: 1px solid brown;
+    background-color: pink;
+
+}
+#menu-horizone ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
 }
 #menu-horizone ul li{
     display: inline-block;
-    line-height: 45px;
-    margin-left: 5px;
+    /* line-height: 45px;
+    margin-left: 5px; */
 }
 #menu-horizone ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
     text-decoration: none;
-    text-transform: capitalize;
+    font-weight: bold;
+    border-right: 1px solid blue;
+}
+#search-menu{
+    float: right;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+#search-menu input{
+    width: 140px;
+    height: 25px;
 }
 #content{
     width: 100%;
-    height: 358px;
+    height: 356px;
 }
 #content h1{
     text-transform: capitalize;
@@ -45,5 +67,13 @@
     background-color: beige;
 }
 #content ul li{
-    
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.highlight{
+    text-transform: uppercase;
+    color: goldenrod;
+}
+a{
+    color: red;
 }
