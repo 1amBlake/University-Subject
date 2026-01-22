@@ -23,6 +23,6 @@ public class Demo_1_Sample extends JFrame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		new Demo_1_Sam
+		// new Demo_1_Sam
 	}
 }
