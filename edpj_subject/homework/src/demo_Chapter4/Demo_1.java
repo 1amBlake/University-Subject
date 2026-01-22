@@ -24,7 +24,7 @@ public class Demo_1 extends JFrame implements ActionListener {
 	private JButton btnHuy;
 
 	public Demo_1() {
-		setTitle("Demo 1");
+		setTitle("Demo 1 - Thử Nghiệm Che Password");
 		setSize(380, 210);
 		setResizable(false);
 		setLocationRelativeTo(null);
@@ -92,7 +92,7 @@ public class Demo_1 extends JFrame implements ActionListener {
 			if (passString.equals("123"))
 				JOptionPane.showMessageDialog(this, "Đăng nhập thành công!");
 			else {
-				JOptionPane.showMessageDialog(this, "Sai mật khẩu!");
+				JOptionPane.showMessageDialog(this, "Sai mật khẩu! Gợi Ý: 123");
 				txtMatKhau.selectAll();
 				txtMatKhau.requestFocus();
 			}
