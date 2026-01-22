@@ -129,11 +129,12 @@ public class Demo_3 extends JFrame implements ActionListener, ItemListener {
 		Font fTextField = txtResult.getFont();
 		if (e.getItem() == chkBold) { // kiem tra in dam, va lam in dam
 			txaBoard.setFont(new Font(fTextArea.getName(), fTextArea.getStyle() ^ Font.BOLD, fTextArea.getSize()));
-			txtResult.setFont(new Font(fTextArea.getName(), fTextArea.getStyle() ^ Font.BOLD, fTextArea.getSize()));
+			txtResult.setFont(new Font(fTextField.getName(), fTextField.getStyle() ^ Font.BOLD, fTextField.getSize()));
 		}
 		if (e.getItem() == chkItalic) {
 			txaBoard.setFont(new Font(fTextArea.getName(), fTextArea.getStyle() ^ Font.ITALIC, fTextArea.getSize()));
-			txtResult.setFont(new Font(fTextArea.getName(), fTextArea.getStyle() ^ Font.ITALIC, fTextArea.getSize()));
+			txtResult
+					.setFont(new Font(fTextField.getName(), fTextField.getStyle() ^ Font.ITALIC, fTextField.getSize()));
 		}
 		// neu khong dung '^'
 		/*
