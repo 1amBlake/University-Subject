@@ -21,4 +21,8 @@ public class Demo_1_Sample extends JFrame implements ActionListener {
 		// TODO Auto-generated method stub
 
 	}
+
+	public static void main(String[] args) {
+		new Demo_1_Sam
+	}
 }
