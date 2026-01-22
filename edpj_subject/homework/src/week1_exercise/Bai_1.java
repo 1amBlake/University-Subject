@@ -1,8 +1,19 @@
 package week1_exercise;
 
-public class Bai_1 {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class Bai_1 extends JFrame implements ActionListener {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 
 	}
