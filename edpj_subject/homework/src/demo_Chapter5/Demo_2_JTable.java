@@ -11,6 +11,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -79,6 +80,7 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 		// tao table model voi header và 0 dong
 		tableModel = new DefaultTableModel(header, 0);
 		table = new JTable(tableModel); // create table base on model
+		table.setDefaultEditor(Object.class, null);
 		JScrollPane sp = new JScrollPane(table);
 		p.add(sp, BorderLayout.CENTER);
 		// them mot dong vao table, thong qua model
@@ -131,7 +133,32 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-
+		Object o = e.getSource();
+		String textHo = txtHo.getText();
+		String textTen = txtTen.getText();
+		if (o.equals(btnExit))
+			System.exit(0);
+		else if (o.equals(btnAdd)) {
+			if (textHo.equals("") || textHo.isEmpty()) {
+				JOptionPane.showMessageDialog(this, "Vui lòng nhập Họ!");
+				txtHo.requestFocus();
+			} else if (textTen.equals("") || textTen.isEmpty()) {
+				JOptionPane.showMessageDialog(this, "Vui lòng nhập Tên");
+				txtTen.requestFocus();
+			} else {
+				Object[] obj = new Object[2];
+				obj[0] = textHo;
+				obj[1] = textTen;
+				tableModel.addRow(obj);
+			}
+		} else if (o.equals(btnModify)) {
+			if (table.getSelectedRow() == -1)
+				JOptionPane.showMessageDialog(this, "Chọn ô cần sửa");
+			else {
+				int row = table.getSelectedRow();
+				txtHo.setText(tableModel.getValueAt(row, 0));
+			}
+		}
 	}
 
 }
