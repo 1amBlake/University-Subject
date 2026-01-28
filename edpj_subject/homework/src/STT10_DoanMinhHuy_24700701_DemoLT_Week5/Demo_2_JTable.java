@@ -1,12 +1,14 @@
-package demo_Chapter5;
+package STT10_DoanMinhHuy_24700701_DemoLT_Week5;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -27,6 +29,7 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 	private JButton btnExit;
 	private DefaultTableModel tableModel;
 	private JTable table;
+	private JTextField txtGhiChu;
 
 	public Demo_2_JTable() {
 		setTitle("Demo JTable");
@@ -48,8 +51,12 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 		pTop.add(pHo);
 
 		JLabel lblHo = new JLabel("Họ: ");
+		lblHo.setPreferredSize(new Dimension(50, 25));
+		lblHo.setAlignmentX(CENTER_ALIGNMENT);
 		txtHo = new JTextField(15);
+		txtHo.setMaximumSize(new Dimension(200, 25));
 		pHo.add(lblHo);
+		pHo.add(Box.createHorizontalStrut(47));
 		pHo.add(txtHo);
 
 		JPanel pTen = new JPanel();
@@ -57,9 +64,26 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 		pTop.add(pTen);
 
 		JLabel lblTen = new JLabel("Tên: ");
+		lblTen.setAlignmentX(CENTER_ALIGNMENT);
+		lblTen.setPreferredSize(new Dimension(50, 25));
 		txtTen = new JTextField(15);
+		txtTen.setMaximumSize(new Dimension(200, 25));
 		pTen.add(lblTen);
+		pTen.add(Box.createHorizontalStrut(40));
 		pTen.add(txtTen);
+
+		JPanel pNote = new JPanel();
+		pNote.setLayout(new BoxLayout(pNote, BoxLayout.X_AXIS));
+		pTop.add(pNote);
+
+		JLabel lblGhiChu = new JLabel("Ghi Chú: ");
+		lblGhiChu.setPreferredSize(new Dimension(50, 25));
+		lblGhiChu.setAlignmentX(CENTER_ALIGNMENT);
+		txtGhiChu = new JTextField(30);
+		txtGhiChu.setMaximumSize(new Dimension(200, 25));
+		pNote.add(lblGhiChu);
+		pNote.add(Box.createHorizontalStrut(20));
+		pNote.add(txtGhiChu);
 
 		JPanel pButton = new JPanel();
 		pButton.setLayout(new FlowLayout());
@@ -93,6 +117,7 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 		btnModify.addActionListener(this);
 		btnDelete.addActionListener(this);
 		btnExit.addActionListener(this);
+		table.addMouseListener(this);
 	}
 
 	public static void main(String[] args) {
@@ -103,6 +128,12 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
+		int row = table.getSelectedRow();
+		if (row >= 0) {
+			txtHo.setText(table.getValueAt(row, 0).toString());
+			txtTen.setText(table.getValueAt(row, 1).toString());
+			txtGhiChu.setText(table.getValueAt(row, 2).toString());
+		}
 
 	}
 
@@ -136,6 +167,7 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 		Object o = e.getSource();
 		String textHo = txtHo.getText();
 		String textTen = txtTen.getText();
+		String textNote = txtGhiChu.getText();
 		if (o.equals(btnExit))
 			System.exit(0);
 		else if (o.equals(btnAdd)) {
@@ -146,17 +178,32 @@ public class Demo_2_JTable extends JFrame implements ActionListener, MouseListen
 				JOptionPane.showMessageDialog(this, "Vui lòng nhập Tên");
 				txtTen.requestFocus();
 			} else {
-				Object[] obj = new Object[2];
+				Object[] obj = new Object[3];
 				obj[0] = textHo;
 				obj[1] = textTen;
+				obj[2] = textNote;
 				tableModel.addRow(obj);
 			}
 		} else if (o.equals(btnModify)) {
 			if (table.getSelectedRow() == -1)
-				JOptionPane.showMessageDialog(this, "Chọn ô cần sửa");
+				JOptionPane.showMessageDialog(this, "Chọn dòng cần sửa");
 			else {
 				int row = table.getSelectedRow();
-				txtHo.setText(tableModel.getValueAt(row, 0));
+				tableModel.setValueAt(textHo, row, 0);
+				tableModel.setValueAt(textTen, row, 1);
+				if (textNote.equals("") || textNote.isEmpty())
+					tableModel.setValueAt("", row, 2);
+				else
+					tableModel.setValueAt(textNote, row, 2);
+
+			}
+		} else if (o.equals(btnDelete)) {
+			if (table.getSelectedRow() == -1)
+				JOptionPane.showMessageDialog(this, "Chọn dòng cần xóa");
+			else {
+				if (JOptionPane.showConfirmDialog(this, "Bạn có chắc xóa dòng này?", "Cảnh báo",
+						JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
+					tableModel.removeRow(table.getSelectedRow());
 			}
 		}
 	}

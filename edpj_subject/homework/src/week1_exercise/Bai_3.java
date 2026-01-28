@@ -20,9 +20,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.text.JTextComponent;
 
-public class Bai_3 extends JFrame implements ActionListener, ItemListener {
+public class Bai_3 extends JFrame implements ActionListener, ItemListener, ListSelectionListener {
 	private JButton btnSolve;
 	private JButton btnDelete;
 	private JButton btnExit;
@@ -119,6 +121,7 @@ public class Bai_3 extends JFrame implements ActionListener, ItemListener {
 
 		pResult.add(lblResult);
 		pResult.add(txtResult);
+
 	}
 
 	public static void main(String[] args) {
@@ -134,6 +137,12 @@ public class Bai_3 extends JFrame implements ActionListener, ItemListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void valueChanged(ListSelectionEvent e) {
 		// TODO Auto-generated method stub
 
 	}
