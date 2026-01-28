@@ -130,6 +130,12 @@ public class Bai_2 extends JFrame implements ActionListener, MouseListener, List
 		btnExit.addActionListener(this);
 		btnInput.addActionListener(this);
 		btnRandomNum.addActionListener(this);
+		btnBoldEven.addActionListener(this);
+		btnBoldOdd.addActionListener(this);
+		btnBoldPrime.addActionListener(this);
+		btnDeleteBold.addActionListener(this);
+		btnUnBold.addActionListener(this);
+		btnTotal.addActionListener(this);
 	}
 
 	public static void main(String[] args) {
@@ -149,16 +155,91 @@ public class Bai_2 extends JFrame implements ActionListener, MouseListener, List
 			randomNumberCreator();
 		} else if (o.equals(btnBoldEven)) {
 			selectBoldEven();
+		} else if (o.equals(btnBoldOdd)) {
+			selectBoldOdd();
+		} else if (o.equals(btnBoldPrime)) {
+			selectBoldPrime();
+		} else if (o.equals(btnDeleteBold)) {
+			deleteBold();
+		} else if (o.equals(btnUnBold)) {
+			unselectBold();
+		} else if (o.equals(btnTotal)) {
+			sumValue();
 		}
+	}
+
+	private void sumValue() {
+		long sum = 0;
+		if (dfModel.size() == 0)
+			JOptionPane.showMessageDialog(null, "Danh sách đang trống!");
+		else {
+			for (int i = 0; i < dfModel.size(); i++)
+				sum += dfModel.getElementAt(i);
+			JOptionPane.showMessageDialog(null, "Kết quả: " + sum);
+		}
+	}
+
+	private void unselectBold() {
+		list.clearSelection();
+	}
+
+	private void deleteBold() {
+		int sizeOfSelection = list.getSelectedValuesList().size();
+
+		for (int i = 0; i < sizeOfSelection; i++) {
+			dfModel.removeElementAt(list.getSelectedIndex());
+		}
+	}
+
+	private void selectBoldPrime() {
+		list.clearSelection();
+		int count = 0;
+		for (int i = 0; i < dfModel.size(); i++) {
+			int number = dfModel.getElementAt(i);
+			if (checkPrime(number)) {
+				list.addSelectionInterval(i, i);
+				count++;
+			}
+		}
+		if (count == 0)
+			JOptionPane.showMessageDialog(null, "Không có số nguyên tố");
+	}
+
+	private boolean checkPrime(int n) {
+		n = Math.abs(n);
+		if (n <= 2)
+			return false;
+		for (int i = 2; i < Math.sqrt(n); i++) {
+			if (n % i == 0)
+				return false;
+		}
+		return true;
+	}
+
+	private void selectBoldOdd() {
+		list.clearSelection();
+		int count = 0;
+		for (int i = 0; i < dfModel.size(); i++) {
+			if (dfModel.getElementAt(i) % 2 != 0) {
+				count++;
+				list.addSelectionInterval(i, i);
+			}
+		}
+		if (count == 0)
+			JOptionPane.showMessageDialog(null, "Không có số lẻ");
 	}
 
 	private void selectBoldEven() {
 		list.clearSelection();
 		int count = 0;
 		for (int i = 0; i < dfModel.size(); i++) {
-			// if(dfModel.getElementAt(i) % 2 == 0)
-			// list .selectin
+			if (dfModel.getElementAt(i) % 2 == 0) {
+				list.addSelectionInterval(i, i);
+				count++;
+			}
 		}
+		if (count == 0)
+			JOptionPane.showMessageDialog(this, "Không có số chẵn!");
 	}
 
 	private void randomNumberCreator() {
@@ -241,7 +322,5 @@ public class Bai_2 extends JFrame implements ActionListener, MouseListener, List
 		// TODO Auto-generated method stub
 
 	}
-
-	// nhap so tu ban phim
 
 }
