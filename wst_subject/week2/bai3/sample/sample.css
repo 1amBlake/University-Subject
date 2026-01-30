@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+#container {
+    width: 1000px;
+    margin: 20px auto;
+    border: 1px solid #aaa;
+}
+
+/* Header */
+#header {
+    height: 80px;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+    line-height: 80px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Main layout */
+#main {
+    display: flex;
+}
+
+/* Links (left) */
+#links {
+    width: 200px;
+    border-right: 3px solid #2f6b3c;
+    padding: 15px;
+}
+
+#links ul {
+    list-style: none;
+}
+
+#links li {
+    margin: 10px 0;
+}
+
+#links a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Content (right) */
+#content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Section */
+.section {
+    margin-bottom: 25px;
+}
+
+/* Green heading */
+.heading {
+    background-color: #0b7a33;
+    color: white;
+    padding: 8px 12px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+/* Text + photo row */
+.content-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Text */
+.text {
+    width: 65%;
+    line-height: 1.6;
+}
+
+/* Promo photo box */
+.promo {
+    width: 180px;
+    height: 220px;
+    background-color: #e6eef0;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 220px;
+    color: #555;
+}
+
+/* Lists */
+#content ul {
+    margin-left: 20px;
+}
+
+#content li {
+    margin: 6px 0;
+}

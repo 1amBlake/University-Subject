@@ -27,7 +27,7 @@ import javax.swing.JTextField;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-public class Bai_2 extends JFrame implements ActionListener, MouseListener, ListSelectionListener, ItemListener {
+public class STT10_DoanMinhHuy_24700701_Bai2_Tuan2 extends JFrame implements ActionListener, MouseListener, ListSelectionListener, ItemListener {
 	private static final long serialVersionUID = 1L;
 	private DefaultListModel<Integer> dfModel;
 	private JList<Integer> list;
@@ -43,7 +43,7 @@ public class Bai_2 extends JFrame implements ActionListener, MouseListener, List
 	private JCheckBox chkAllowNeg;
 	private JButton btnRandomNum;
 
-	public Bai_2() {
+	public STT10_DoanMinhHuy_24700701_Bai2_Tuan2() {
 		setTitle("Thao Tác Trên JList");
 		setSize(750, 500);
 		setResizable(false);
@@ -140,7 +140,7 @@ public class Bai_2 extends JFrame implements ActionListener, MouseListener, List
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Bai_2().setVisible(true);
+		new STT10_DoanMinhHuy_24700701_Bai2_Tuan2().setVisible(true);
 	}
 
 	@Override
@@ -167,7 +167,7 @@ public class Bai_2 extends JFrame implements ActionListener, MouseListener, List
 			sumValue();
 		}
 	}
-
+//24700701 Doan Minh Huy
 	private void sumValue() {
 		long sum = 0;
 		if (dfModel.size() == 0)

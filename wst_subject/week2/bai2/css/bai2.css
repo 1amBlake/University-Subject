@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.header {
+    height: 150px;
+    background-image: url(../img/background.png);
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.header h1 {
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    color: white;
+}
+
+.header h3 {
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    color: white;
+    font-weight: normal;
+}
+
+.nav {
+    height: 40px;
+    background-color: #b2aeab;
+}
+
+.nav ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.content {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contentLeft {
+    width: 65%;
+    float: left;
+}
+
+.contentRight {
+    width: 30%;
+    float: right;
+}
+
+.course {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.course img {
+    width: 40%;
+    float: left;
+}
+
+.courseText {
+    width: 55%;
+    float: right;
+}
+
+.foodName {
+    color: gray;
+    font-size: 14px;
+}
+
+.courseText h2 {
+    color: #a33;
+    margin: 5px 0;
+}
+
+.courseText h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.courseText p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.box {
+    margin-bottom: 30px;
+}
+
+.box h2 {
+    color: #a33;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.box ul {
+    list-style: none;
+}
+
+.box ul li {
+    color: #a33;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer {
+    clear: both;
+    background-color: #b2aeab;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
