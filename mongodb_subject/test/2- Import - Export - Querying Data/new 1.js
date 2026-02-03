@@ -19,4 +19,4 @@ db.inventory.find(
 
 expression: $and:[{$eq: ['%qty',40]] :return true/false
 
-db.bios.find({'name.first': {$regex: /o/}})
+  
