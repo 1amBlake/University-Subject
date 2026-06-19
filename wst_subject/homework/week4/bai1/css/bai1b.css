@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.card img{
+    height:  220px;
+    object-fit: cover;
+}

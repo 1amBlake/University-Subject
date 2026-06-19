@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="title" colspan="2"><h1>THÔNG TIN ĐĂNG NHẬP</h1></td>
+        </tr>
+
+        <tr>
+            <th>Tài Khoản</th>
+            <td><input type="text" name="user" id="user"></td>
+        </tr>
+
+        <tr>
+            <th>Mật Khẩu</th>
+            <td><input type="password" name="password" id="password"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="center">
+                <button onclick="dangNhap()" type="button">Đăng Nhập</button>
+            </td>
+        </tr>
+    </table>
+    <button><a href="../html/dangky.html">Đăng Ký</a></button>
+
+    <script>
+        function dangNhap(){
+            let user = document.getElementById("user").value;
+            let password = document.getElementById("password").value;
+
+            let userStorage = localStorage.getItem("user");
+            let passwordStorage = localStorage.getItem("password");
+
+            if (user == "" || password == ""){
+                alert("Chưa nhập thông tin!");
+                return;
+            }
+
+            if (userStorage == null || passwordStorage == null){
+                alert("Chưa có tài khoản!");
+                return;
+            }
+
+            if (user == userStorage && password == passwordStorage){
+                alert("Đăng nhập thành công");
+            } else{
+                alert("Sài tài khoản hoặc mật khẩu!");
+            }
+        }
+    </script>
+</body>
+</html>

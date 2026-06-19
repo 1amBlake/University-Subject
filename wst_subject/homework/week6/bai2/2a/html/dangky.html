@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="title" colspan="2"><h1>THÔNG TIN ĐĂNG KÝ</h1></td>
+        </tr>
+
+        <tr>
+            <th>Tài Khoản</th>
+            <td><input type="text" name="user" id="user"></td>
+        </tr>
+
+        <tr>
+            <th>Mật Khẩu</th>
+            <td><input type="password" name="pass" id="password"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="center">
+                <button type="button" onclick="dangKy()">Đăng Ký</button>
+            </td>
+        </tr>
+    </table>
+    
+    <button type="button"><a href="../html/dangnhap.html">Đăng Nhập</a></button>
+
+    <script>
+        function dangKy(){
+            let user = document.getElementById("user").value;
+            let pass = document.getElementById("password").value;
+
+            if (user == "" || pass == ""){
+                alert("Thông tin đang để trống!");
+                return;
+            }
+
+            localStorage.setItem("user", user);
+            localStorage.setItem("password", pass);
+
+            alert("Đăng Ký Thành Công!");
+            window.location.href = "dangnhap.html";
+        }
+    </script>
+</body>
+</html>

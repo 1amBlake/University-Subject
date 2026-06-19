@@ -1,0 +1,130 @@
+ *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            background: linear-gradient(to right, #dbadd8 0%, #c9d8f3 100%);
+        }
+
+        #nav{
+            background-color: #514a44;
+            padding: 0;
+        }
+
+        #nav .container-fluid{
+            padding: 20px 32px;
+        }
+
+        .navbar-brand{
+            color: #fff !important;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 42px;
+            letter-spacing: 0.5;
+        }
+
+        .navbar .nav-link{
+            color: #fff !important;
+            font-size: 14px;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .navbar .nav-link:hover, .navbar-brand:hover{
+            color: #d8d8d8 !important;
+        }
+        
+        .nav-item .dropdown{
+            position: relative;
+        }
+
+        .dropdown-menu{
+            background-color: #514a44;
+            border: none;
+            border-radius: 0;
+            margin-top: 20px;
+            min-width: 200px;
+        }
+
+        .dropdown-item{
+            color: #fff;
+            font-size: 14px;
+            padding: 10px 16px;
+        }
+
+        .dropdown-item:hover{
+            background-color: #625a53;
+            color: #fff;
+        }
+
+        .download-btn{
+            background-color: #18a8dd;
+            color: #fff;
+            border-radius: 999px;
+            border: none;
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .download-btn:hover{
+            background-color: #1091c0;
+            color: #fff;
+        }
+
+        .sec{
+            background: linear-gradient(to right, #dbadd8 0%, #c9d8f3 100%);
+            padding: 34px 92px 38px;
+        }
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .img{
+            flex: 0 0 560px;
+        }
+
+        .img img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content{
+            flex: 1;
+        }
+
+        .content h1{
+            font-size: 72px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #222;
+            margin: 0 0 44px;
+            line-height: 1.05;
+        }
+
+        .content p{
+            font-size: 24px;
+            color: #222;
+            margin: 0 0 42px;
+            letter-spacing: 1px;
+        }
+
+        .order-btn{
+            background: transparent;
+            color: #222;
+            border: 2px solid #222;
+            border-radius: 999px;
+            padding: 16px 52px;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .order-btn:hover{
+            background-color: #222;
+            color: #fff;
+        }

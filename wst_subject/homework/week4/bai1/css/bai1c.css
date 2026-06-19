@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.table td, .table th{
+    vertical-align: middle;
+}
+
+.card-box{
+    max-width: 900px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    background: #fff;
+}

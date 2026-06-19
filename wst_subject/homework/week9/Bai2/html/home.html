@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách tour</title>
+
+    <script src="../js/jquery-4.0.0.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        .banner {
+            width: 100%;
+            height: 230px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0 border border-secondary">
+        <div class="row g-0">
+            <div class="col-12">
+                <img src="../img/banner-5.png" alt="Banner du lịch" class="banner">
+            </div>
+        </div>
+
+        <div class="row g-0 border-top border-bottom border-secondary">
+            <div class="col-12">
+                <nav class="nav py-2 px-3">
+                    <a class="nav-link p-0 me-4" href="#">Đăng nhập</a>
+                    <a class="nav-link p-0" href="#" data-bs-toggle="modal" data-bs-target="#modalTour">Mở tour mới</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTour" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalTourLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title w-100 text-center" id="modalTourLabel">THÔNG TIN TOUR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="formTour" novalidate>
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapMaTour" class="col-sm-4 col-form-label">Mã tour <span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="nhapMaTour" placeholder="HNH-DNG-08-2018">
+                                    <div class="text-danger small" id="loiMaTour"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapHanhTrinh" class="col-sm-4 col-form-label">Hành trình <span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="nhapHanhTrinh" placeholder="Hà Nội - Huế - Đà Nẵng 5 ngày 4 đêm">
+                                    <div class="text-danger small" id="loiHanhTrinh"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapNgayKhoiHanh" class="col-sm-4 col-form-label">Ngày khởi hành <span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="nhapNgayKhoiHanh">
+                                    <div class="text-danger small" id="loiNgayKhoiHanh"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapThoiGian" class="col-sm-4 col-form-label">Thời gian <span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="nhapThoiGian" placeholder="5 ngày 4 đêm">
+                                    <div class="text-danger small" id="loiThoiGian"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapGiaTour" class="col-sm-4 col-form-label">Giá tour <span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="number" class="form-control" id="nhapGiaTour" placeholder="10500000">
+                                    <div class="text-danger small" id="loiGiaTour"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapAnhDaiDien" class="col-sm-4 col-form-label">Ảnh đại diện <span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="file" class="form-control" id="nhapAnhDaiDien">
+                                    <div class="text-danger small" id="loiAnhDaiDien"></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100">Lưu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <h5 class="text-center fw-normal my-3">DANH SÁCH TOUR - DU LỊCH VIỆT</h5>
+            </div>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0 align-middle">
+                        <thead>
+                            <tr class="text-center">
+                                <th>STT</th>
+                                <th>Mã Tour</th>
+                                <th>Hành trình</th>
+                                <th>Ngày khởi hành</th>
+                                <th>Thời gian</th>
+                                <th>Giá tour</th>
+                                <th>Ảnh đại diện</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tourBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let stt = 1;
+
+        document.getElementById("formTour").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+
+            let maTour = document.getElementById("nhapMaTour").value.trim();
+            let hanhTrinh = document.getElementById("nhapHanhTrinh").value.trim();
+            let ngayKhoiHanh = document.getElementById("nhapNgayKhoiHanh").value;
+            let thoiGian = document.getElementById("nhapThoiGian").value.trim();
+            let giaTour = document.getElementById("nhapGiaTour").value.trim();
+            let anhDaiDien = document.getElementById("nhapAnhDaiDien").value;
+
+            xoaLoi();
+
+            let hopLe = true;
+
+
+            if (maTour === "") {
+                document.getElementById("loiMaTour").innerHTML = "Mã tour không được rỗng";
+                hopLe = false;
+            }
+
+            if (hanhTrinh === "") {
+                document.getElementById("loiHanhTrinh").innerHTML = "Hành trình không được rỗng";
+                hopLe = false;
+            }
+
+            if (ngayKhoiHanh === "") {
+                document.getElementById("loiNgayKhoiHanh").innerHTML = "Ngày khởi hành không được rỗng";
+                hopLe = false;
+            }
+
+            if (thoiGian === "") {
+                document.getElementById("loiThoiGian").innerHTML = "Thời gian không được rỗng";
+                hopLe = false;
+            }
+
+            if (giaTour === "") {
+                document.getElementById("loiGiaTour").innerHTML = "Giá tour không được rỗng";
+                hopLe = false;
+            }
+
+            if (anhDaiDien === "") {
+                document.getElementById("loiAnhDaiDien").innerHTML = "Ảnh đại diện không được rỗng";
+                hopLe = false;
+            }
+
+            let mauMaTour = /^[A-Z]{3}-[A-Z]{3}-\d{2}-\d{4}$/;
+            if (maTour !== "" && !mauMaTour.test(maTour)) {
+                document.getElementById("loiMaTour").innerHTML = "Mã tour phải theo mẫu XXX-XXX-mm-yyyy, ví dụ: HNH-DNG-08-2018";
+                hopLe = false;
+            }
+
+            if (ngayKhoiHanh !== "") {
+                let ngayNhap = new Date(ngayKhoiHanh);
+                let ngayHienTai = new Date();
+                ngayHienTai.setHours(0, 0, 0, 0);
+
+                let ngaySau30Ngay = new Date(ngayHienTai);
+                ngaySau30Ngay.setDate(ngaySau30Ngay.getDate() + 30);
+
+                if (ngayNhap <= ngaySau30Ngay) {
+                    document.getElementById("loiNgayKhoiHanh").innerHTML = "Ngày khởi hành phải sau ngày hiện tại 30 ngày";
+                    hopLe = false;
+                }
+            }
+
+            if (giaTour !== "" && Number(giaTour) <= 0) {
+                document.getElementById("loiGiaTour").innerHTML = "Giá tour phải lớn hơn 0";
+                hopLe = false;
+            }
+
+            if (anhDaiDien !== "") {
+                let mauAnh = /\.(jpg|gif|png)$/i;
+                if (!mauAnh.test(anhDaiDien)) {
+                    document.getElementById("loiAnhDaiDien").innerHTML = "Ảnh phải có đuôi jpg, gif hoặc png";
+                    hopLe = false;
+                }
+            }
+
+            if (hopLe === false) {
+                return;
+            }
+
+            let tenAnh = anhDaiDien.split("\\").pop();
+
+            let dongMoi = `
+                <tr>
+                    <td class="text-center">${stt}</td>
+                    <td>${maTour}</td>
+                    <td>${hanhTrinh}</td>
+                    <td class="text-center">${ngayKhoiHanh}</td>
+                    <td class="text-center">${thoiGian}</td>
+                    <td class="text-center">${giaTour}</td>
+                    <td class="text-center">${tenAnh}</td>
+                </tr>
+            `;
+
+            document.getElementById("tourBody").innerHTML += dongMoi;
+            stt++;
+
+
+            document.getElementById("formTour").reset();
+
+
+            let modal = bootstrap.Modal.getInstance(document.getElementById("modalTour"));
+            modal.hide();
+        });
+
+        function xoaLoi() {
+            document.getElementById("loiMaTour").innerHTML = "";
+            document.getElementById("loiHanhTrinh").innerHTML = "";
+            document.getElementById("loiNgayKhoiHanh").innerHTML = "";
+            document.getElementById("loiThoiGian").innerHTML = "";
+            document.getElementById("loiGiaTour").innerHTML = "";
+            document.getElementById("loiAnhDaiDien").innerHTML = "";
+        }
+    </script>
+</body>
+</html>

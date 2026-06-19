@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3" class="title">DANH SÁCH SINH VIÊN</td>
+        </tr>
+        <tr>
+            <th>MSSV</th>
+            <th>Tên</th>
+            <th>Lớp</th>
+        </tr>
+
+        <tr>
+            <td id="mssv"></td>
+            <td id="hoten"></td>
+            <td id="lop"></td>
+        </tr>
+    </table>
+
+    <script>
+        let mssv = prompt("Nhập mã SV: ");
+        let hoten = prompt("Nhập họ tên: ");
+        let lop = prompt("Nhập lớp: ");
+
+        document.getElementById("mssv").innerHTML = mssv;
+        document.getElementById("hoten").innerHTML = hoten;
+        document.getElementById("lop").innerHTML = lop;
+    </script>
+</body>
+</html>

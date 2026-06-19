@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        .form-box {
+            max-width: 760px;
+            margin: 40px auto;
+            border: 1px solid #ccc;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .section-title {
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .row-form {
+            border-bottom: 1px solid #eee;
+            padding: 8px 0;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .btn-black {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2 class="title">ĐĂNG KÝ TÀI KHOẢN</h2>
+
+        <form id="formDangKy" novalidate>
+            <div class="row row-form align-items-center">
+                <label for="txtDN" class="col-4 text-end">Tên đăng nhập:</label>
+                <div class="col-5">
+                    <input type="text" id="txtDN" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiDN">*</div>
+            </div>
+
+            <div class="row row-form align-items-center">
+                <label for="txtMK" class="col-4 text-end">Mật khẩu:</label>
+                <div class="col-5">
+                    <input type="password" id="txtMK" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiMK">*</div>
+            </div>
+
+            <div class="row row-form align-items-center">
+                <label for="txtXNMK" class="col-4 text-end">Nhập lại mật khẩu:</label>
+                <div class="col-5">
+                    <input type="password" id="txtXNMK" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiXNMK">*</div>
+            </div>
+
+            <div class="section-title">THÔNG TIN CÁ NHÂN</div>
+
+            <div class="row row-form align-items-center">
+                <label for="txtName" class="col-4 text-end">Họ và tên:</label>
+                <div class="col-5">
+                    <input type="text" id="txtName" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiName">*</div>
+            </div>
+
+            <div class="row row-form align-items-center">
+                <label for="txtNgaySinh" class="col-4 text-end">Ngày sinh:</label>
+                <div class="col-5">
+                    <input type="date" id="txtNgaySinh" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiNgaySinh">*</div>
+            </div>
+
+            <div class="row row-form align-items-center">
+                <label class="col-4 text-end">Giới tính:</label>
+                <div class="col-5">
+                    <input type="radio" name="gioiTinh" value="Nam" checked> Nam
+                    <input type="radio" name="gioiTinh" value="Nữ" class="ms-2"> Nữ
+                </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row row-form align-items-center">
+                <label for="txtDC" class="col-4 text-end">Địa chỉ:</label>
+                <div class="col-5">
+                    <input type="text" id="txtDC" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiDC">*</div>
+            </div>
+
+            <div class="row row-form align-items-center">
+                <label for="txtDT" class="col-4 text-end">Điện thoại:</label>
+                <div class="col-5">
+                    <input type="text" id="txtDT" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiDT">*</div>
+            </div>
+
+            <div class="row row-form align-items-center">
+                <label for="txtEmail" class="col-4 text-end">Email:</label>
+                <div class="col-5">
+                    <input type="text" id="txtEmail" class="form-control form-control-sm">
+                </div>
+                <div class="col-3 error" id="loiEmail">*</div>
+            </div>
+
+            <div class="text-center my-3">
+                <button type="submit" class="btn-black">Đăng ký</button>
+                <button type="reset" class="btn-black" id="btnHuy">Hủy</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("formDangKy").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let tenDN = document.getElementById("txtDN").value.trim();
+            let matKhau = document.getElementById("txtMK").value.trim();
+            let xacNhanMK = document.getElementById("txtXNMK").value.trim();
+            let hoTen = document.getElementById("txtName").value.trim();
+            let ngaySinh = document.getElementById("txtNgaySinh").value;
+            let diaChi = document.getElementById("txtDC").value.trim();
+            let dienThoai = document.getElementById("txtDT").value.trim();
+            let email = document.getElementById("txtEmail").value.trim();
+
+            xoaLoi();
+
+            let hopLe = true;
+
+            let mauTenDN = /^[A-Za-z][A-Za-z0-9]*$/;
+            if (tenDN === "") {
+                document.getElementById("loiDN").innerHTML = "bắt buộc";
+                hopLe = false;
+            } else if (!mauTenDN.test(tenDN)) {
+                document.getElementById("loiDN").innerHTML = "sai định dạng";
+                hopLe = false;
+            }
+
+            let mauMK = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,}$/;
+            if (matKhau === "") {
+                document.getElementById("loiMK").innerHTML = "bắt buộc";
+                hopLe = false;
+            } else if (!mauMK.test(matKhau)) {
+                document.getElementById("loiMK").innerHTML = "mật khẩu không hợp lệ";
+                hopLe = false;
+            }
+
+            if (xacNhanMK === "") {
+                document.getElementById("loiXNMK").innerHTML = "bắt buộc";
+                hopLe = false;
+            } else if (xacNhanMK !== matKhau) {
+                document.getElementById("loiXNMK").innerHTML = "không khớp";
+                hopLe = false;
+            }
+
+            let mauHoTen = /^([A-ZÀ-Ỹ][a-zà-ỹ]+)(\s[A-ZÀ-Ỹ][a-zà-ỹ]+)+$/;
+            if (hoTen === "") {
+                document.getElementById("loiName").innerHTML = "bắt buộc";
+                hopLe = false;
+            } else if (!mauHoTen.test(hoTen)) {
+                document.getElementById("loiName").innerHTML = "sai định dạng";
+                hopLe = false;
+            }
+
+            if (ngaySinh === "") {
+                document.getElementById("loiNgaySinh").innerHTML = "bắt buộc";
+                hopLe = false;
+            } else {
+                let tuoi = tinhTuoi(ngaySinh);
+                if (tuoi < 16) {
+                    document.getElementById("loiNgaySinh").innerHTML = "phải trên 16 tuổi";
+                    hopLe = false;
+                }
+            }
+
+            if (diaChi === "") {
+                document.getElementById("loiDC").innerHTML = "bắt buộc";
+                hopLe = false;
+            }
+
+            let mauDT = /^(09|03|07|06|05|04)[0-9]{8}$/;
+            if (dienThoai === "") {
+                document.getElementById("loiDT").innerHTML = "bắt buộc";
+                hopLe = false;
+            } else if (!mauDT.test(dienThoai)) {
+                document.getElementById("loiDT").innerHTML = "phải là số";
+                hopLe = false;
+            }
+
+            let mauEmail = /^[A-Za-z0-9_.]+@gmail\.com$/;
+            if (email === "") {
+                document.getElementById("loiEmail").innerHTML = "bắt buộc";
+                hopLe = false;
+            } else if (!mauEmail.test(email)) {
+                document.getElementById("loiEmail").innerHTML = "nhập đúng địa chỉ email";
+                hopLe = false;
+            }
+
+            if (hopLe) {
+                alert("Đăng ký thành công");
+            }
+        });
+
+        document.getElementById("btnHuy").addEventListener("click", function () {
+            xoaLoi();
+        });
+
+        function xoaLoi() {
+            document.getElementById("loiDN").innerHTML = "*";
+            document.getElementById("loiMK").innerHTML = "*";
+            document.getElementById("loiXNMK").innerHTML = "*";
+            document.getElementById("loiName").innerHTML = "*";
+            document.getElementById("loiNgaySinh").innerHTML = "*";
+            document.getElementById("loiDC").innerHTML = "*";
+            document.getElementById("loiDT").innerHTML = "*";
+            document.getElementById("loiEmail").innerHTML = "*";
+        }
+
+        function tinhTuoi(ngaySinh) {
+            let ns = new Date(ngaySinh);
+            let homNay = new Date();
+            let tuoi = homNay.getFullYear() - ns.getFullYear();
+            let thang = homNay.getMonth() - ns.getMonth();
+
+            if (thang < 0 || (thang === 0 && homNay.getDate() < ns.getDate())) {
+                tuoi--;
+            }
+
+            return tuoi;
+        }
+    </script>
+</body>
+</html>

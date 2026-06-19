@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Facebook</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .top-bar {
+            background-color: #3b5998;
+        }
+
+        .main-box {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #e7e9ff;
+        }
+
+        .left-box {
+            min-height: 430px;
+            background-color: #dfe3ff;
+        }
+
+        .fb-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="fb-title">facebook</div>
+
+            <form class="d-flex align-items-end gap-2">
+                <div>
+                    <label class="form-label text-white mb-0 small">Email hoặc điện thoại</label>
+                    <input type="text" class="form-control form-control-sm">
+                </div>
+                <div>
+                    <label class="form-label text-white mb-0 small">Mật khẩu</label>
+                    <input type="password" class="form-control form-control-sm">
+                </div>
+                <button type="button" class="btn btn-primary btn-sm border-light">Đăng nhập</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-box border">
+        <div class="row g-0">
+            <div class="col-md-5 left-box d-flex flex-column justify-content-center align-items-center text-center p-4">
+                <h3 class="text-primary">Cảm ơn bạn<br>đã ghé thăm!</h3>
+                <p class="mt-3 fw-bold">Chúng tôi mong sớm gặp lại bạn.</p>
+            </div>
+
+            <div class="col-md-7 p-4">
+                <h2 class="fw-bold">Đăng ký</h2>
+                <p>Miễn phí và sẽ luôn như vậy.</p>
+
+                <form id="formDangKy" novalidate>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" id="txtHo" placeholder="Họ">
+                            <div class="error" id="loiHo"></div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="txtTen" placeholder="Tên">
+                            <div class="error" id="loiTen"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <input type="text" class="form-control" id="txtEmail" placeholder="Email đăng nhập">
+                        <div class="error" id="loiEmail"></div>
+                    </div>
+
+                    <div class="mb-2">
+                        <input type="text" class="form-control" id="txtNhapLaiEmail" placeholder="Nhập lại Email">
+                        <div class="error" id="loiNhapLaiEmail"></div>
+                    </div>
+
+                    <div class="mb-2">
+                        <input type="password" class="form-control" id="txtMatKhau" placeholder="Mật khẩu">
+                        <div class="error" id="loiMatKhau"></div>
+                    </div>
+
+                    <div class="mb-2">
+                        <input type="number" class="form-control" id="txtNamSinh" placeholder="Năm sinh">
+                        <div class="error" id="loiNamSinh"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success px-5">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("formDangKy").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let ho = document.getElementById("txtHo").value.trim();
+            let ten = document.getElementById("txtTen").value.trim();
+            let email = document.getElementById("txtEmail").value.trim();
+            let nhapLaiEmail = document.getElementById("txtNhapLaiEmail").value.trim();
+            let matKhau = document.getElementById("txtMatKhau").value.trim();
+            let namSinh = document.getElementById("txtNamSinh").value.trim();
+
+            xoaLoi();
+            let hopLe = true;
+
+            if (ho === "") {
+                document.getElementById("loiHo").innerHTML = "Họ không được bỏ trống";
+                hopLe = false;
+            } else if (!kiemTraVietHoa(ho)) {
+                document.getElementById("loiHo").innerHTML = "Họ phải bắt đầu bằng chữ hoa";
+                hopLe = false;
+            }
+
+            if (ten === "") {
+                document.getElementById("loiTen").innerHTML = "Tên không được bỏ trống";
+                hopLe = false;
+            } else if (!kiemTraVietHoa(ten)) {
+                document.getElementById("loiTen").innerHTML = "Tên phải bắt đầu bằng chữ hoa";
+                hopLe = false;
+            }
+
+            let mauEmail = /^[A-Za-z0-9_.]+@[A-Za-z0-9]+\.[A-Za-z]{2,}$/;
+            if (email === "") {
+                document.getElementById("loiEmail").innerHTML = "Email không được bỏ trống";
+                hopLe = false;
+            } else if (!mauEmail.test(email)) {
+                document.getElementById("loiEmail").innerHTML = "Email không đúng định dạng";
+                hopLe = false;
+            }
+
+            if (nhapLaiEmail === "") {
+                document.getElementById("loiNhapLaiEmail").innerHTML = "Nhập lại email không được bỏ trống";
+                hopLe = false;
+            } else if (nhapLaiEmail !== email) {
+                document.getElementById("loiNhapLaiEmail").innerHTML = "Email nhập lại không trùng khớp";
+                hopLe = false;
+            }
+
+            let mauMatKhau = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+            if (matKhau === "") {
+                document.getElementById("loiMatKhau").innerHTML = "Mật khẩu không được bỏ trống";
+                hopLe = false;
+            } else if (!mauMatKhau.test(matKhau)) {
+                document.getElementById("loiMatKhau").innerHTML = "Mật khẩu phải có chữ, số và ít nhất 6 ký tự";
+                hopLe = false;
+            }
+
+            if (namSinh === "") {
+                document.getElementById("loiNamSinh").innerHTML = "Năm sinh không được bỏ trống";
+                hopLe = false;
+            } else if (Number(namSinh) > 2002) {
+                document.getElementById("loiNamSinh").innerHTML = "Năm sinh phải <= 2002";
+                hopLe = false;
+            }
+
+            if (hopLe) {
+                alert("Bạn đã đăng ký thành công");
+                document.getElementById("formDangKy").reset();
+            }
+        });
+
+        function xoaLoi() {
+            document.getElementById("loiHo").innerHTML = "";
+            document.getElementById("loiTen").innerHTML = "";
+            document.getElementById("loiEmail").innerHTML = "";
+            document.getElementById("loiNhapLaiEmail").innerHTML = "";
+            document.getElementById("loiMatKhau").innerHTML = "";
+            document.getElementById("loiNamSinh").innerHTML = "";
+        }
+
+        function kiemTraVietHoa(chuoi) {
+            let kyTuDau = chuoi.charAt(0);
+            return kyTuDau === kyTuDau.toUpperCase();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+        /*General*/
+        @font-face {
+            font-family: 'FontCustomize';
+            src: url('../font/fontawesome-webfont.ttf') format('truetype'),
+                url('../font/fontawesome-webfont.woff') format('woff'),
+                url('../font/fontawesome-webfont.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .box{
+            min-height: 100vh;
+            background-image: url(../img/hero-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .navbar-toggler{
+            border: none;
+            box-shadow: none !important;
+        }
+
+        .navbar-toggler-icon{
+            background-image: none !important;
+            width: 32px;
+            height: 24px;
+            position: relative;
+            border-top: 4px solid white;
+        }
+
+        .navbar-toggler-icon::before, .navbar-toggler-icon::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 32px;
+            border-top: 4px solid white;
+        }
+
+        .navbar-toggler-icon::before{
+            top: 6px;
+        }
+
+        .navbar-toggler-icon::after{
+            top: 16px;
+        }
+
+        .navbar-toggler:focus{
+            box-shadow: none;
+        }
+
+        .navbar-brand{
+            font-family: 'Brush Script MT';
+            color: white !important;
+            font-size: 40px;
+        }
+
+        .navbar-brand:hover {
+            color: white !important;
+        }
+
+        .nav-link{
+            color: white;
+            font-size: 25px;
+        }
+
+        .nav-link:hover {
+            color: #ffbe33;
+        }
+        .fa {
+            font-family: 'FontCustomize';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            padding: 20px;
+        }
+
+        .fa-user::before {
+            content: "\f007";
+        }
+
+        .fa-shopping-cart::before {
+            content: "\f07a";
+        }
+
+        .fa-search::before {
+            content: "\f002";
+        }
+
+        .icon-feature a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .icon-feature a:hover{
+            color: #ffbe33;
+        }
+
+        .btn-order-onl{
+            background-color: #ffbe33;
+            border-radius: 999px;
+            color: white;
+        }
+
+        .btn-order-onl:hover{
+            background-color: #e69c00;
+            color: white;
+        }

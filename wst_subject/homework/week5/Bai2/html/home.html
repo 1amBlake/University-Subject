@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="../img/favicon-resize.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/general.css">
+    <style>
+        #home{
+            color: #ffbe33;
+        }
+
+        .main-content{
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .slide-content{
+            max-width: 650px;
+            padding-bottom: 80px;
+        }
+
+        .heading h1{
+            font-family: 'Brush Script MT';
+            font-size: 72px;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .para p{
+            font-size: 24px;
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 30px;
+
+        }
+
+        .btn-order-now{
+            border-radius: 999px;
+            background-color: #ffbe33;
+            color: white;
+            padding: 14px 45px;
+            font-size: 22px;
+        }
+
+        .btn-order-now:hover{
+            background-color: #e69c00;
+            color: white;
+        }
+
+        .carousel-item{
+            min-height: 500px;
+        }
+
+        .carousel-indicators{
+            justify-content: flex-start;
+            margin: 0;
+            bottom: 10px;
+        }
+
+        .carousel-indicators button{
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: none;
+            margin-right: 10px;
+            opacity: 1;
+        }
+
+        .carousel-indicators .active{
+            background-color: #ffbe33;
+        }
+
+        @media (max-width: 767.98px){
+            .hero-content{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .slide-content{
+                max-width: 100%;
+                text-align: center; 
+                padding-bottom: 100px;
+            }
+
+            .heading h1{
+                font-size: 48px;
+            }
+
+            .para p{
+                font-size: 18px;
+            }
+
+            .carousel-indicators{
+                justify-content: center; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Phần Chung-->
+    <div class="box">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid px-5">
+                <a href="../html/home.html" class="navbar-brand">
+                    <span>Fence</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NAVBAR">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse align-items-center text-center" id="NAVBAR">
+                    <ul class="navbar-nav mx-auto gap-3 align-items-center">
+                        <li class="nav-item">
+                            <a href="../html/home.html" class="nav-link" id="home">HOME</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="../html/menu.html" class="nav-link">MENU</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="../html/about.html" class="nav-link">ABOUT</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="../html/book.html" class="nav-link">BOOK TABLE</a>
+                        </li>
+                    </ul>
+
+                    <div class="icon-feature d-flex justify-content-center">
+                        <a href="#">
+                            <i  class="fa fa-user"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+
+                    <div class="ord-btn text-center">
+                        <button class="btn btn-order-onl" type="button">Order Online</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Phần Riêng-->
+        <div class="container-fluid main-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 col-md-7 col-12">
+                    <div class="carousel slide" id="content" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#content" data-bs-slide-to="0" aria-label="Slide 1" class="active"></button>
+                            <button type="button" data-bs-target="#content" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#content" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="slide-content">
+                                    <div class="heading">
+                                        <h1>Fast Food Restaurant</h1>
+                                    </div>
+
+                                    <div class="para">
+                                        <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                                    </div>
+
+                                    <div class="ord-now">
+                                        <button class="btn btn-order-now" type="button">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="slide-content">
+                                    <div class="heading">
+                                        <h1>Fast Food Restaurant</h1>
+                                    </div>
+
+                                    <div class="para">
+                                        <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                                    </div>
+
+                                    <div class="ord-now">
+                                        <button class="btn btn-order-now" type="button">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="slide-content">
+                                    <div class="heading">
+                                        <h1>Fast Food Restaurant</h1>
+                                    </div>
+
+                                    <div class="para">
+                                        <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+                                    </div>
+
+                                    <div class="ord-now">
+                                        <button class="btn btn-order-now" type="button">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6 col-md-5 d-none d-md-block"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

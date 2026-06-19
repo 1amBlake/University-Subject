@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký học kỳ quân đội</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        .banner {
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0 border border-secondary">
+        <div class="row g-0">
+            <div class="col-12">
+                <img src="../img/website.png" alt="Banner học kỳ quân đội" class="banner">
+            </div>
+        </div>
+
+        <div class="row g-0 border-top border-bottom border-secondary">
+            <div class="col-12">
+                <nav class="nav py-2 px-3">
+                    <a href="#" class="nav-link p-0 me-4">Trang chủ</a>
+                    <a href="#" class="nav-link p-0" data-bs-toggle="modal" data-bs-target="#modalDangKy">Đăng ký</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalDangKy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalDangKyLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title w-100 text-center" id="modalDangKyLabel">THÔNG TIN HỌC VIÊN</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="formDangKy" novalidate>
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapHoTen" class="col-sm-4 col-form-label">Họ và tên</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="nhapHoTen">
+                                    <div class="text-danger small" id="loiHoTen"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="chonGioiTinh" class="col-sm-4 col-form-label">Giới tính</label>
+                                <div class="col-sm-8">
+                                    <select class="form-select" id="chonGioiTinh">
+                                        <option value="Nam">Nam</option>
+                                        <option value="Nữ">Nữ</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapSDT" class="col-sm-4 col-form-label">Số điện thoại</label>
+                                <div class="col-sm-8">
+                                    <input type="tel" class="form-control" id="nhapSDT" placeholder="090-123456">
+                                    <div class="text-danger small" id="loiSDT"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapNgaySinh" class="col-sm-4 col-form-label">Ngày sinh</label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="nhapNgaySinh">
+                                    <div class="text-danger small" id="loiNgaySinh"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapDiaChi" class="col-sm-4 col-form-label">Địa chỉ</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="nhapDiaChi">
+                                    <div class="text-danger small" id="loiDiaChi"></div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="chonKhoaHoc" class="col-sm-4 col-form-label">Bạn muốn tham gia khóa nào?</label>
+                                <div class="col-sm-8">
+                                    <select class="form-select" id="chonKhoaHoc">
+                                        <option value="2 tuần">2 tuần</option>
+                                        <option value="4 tuần">4 tuần</option>
+                                        <option value="6 tuần">6 tuần</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapHocPhi" class="col-sm-4 col-form-label">Học phí</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="nhapHocPhi" readonly>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nhapAnh" class="col-sm-4 col-form-label">Ảnh đại diện</label>
+                                <div class="col-sm-8">
+                                    <input type="file" class="form-control" id="nhapAnh">
+                                    <div class="text-danger small" id="loiAnh"></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100">Lưu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <h5 class="text-center fw-normal my-3">LIST OF MEMBERS</h5>
+            </div>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0 align-middle">
+                        <thead>
+                            <tr class="text-center">
+                                <th>STT</th>
+                                <th>Họ và tên</th>
+                                <th>Giới tính</th>
+                                <th>Số điện thoại</th>
+                                <th>Ngày sinh</th>
+                                <th>Địa chỉ</th>
+                                <th>Khóa học</th>
+                                <th>Học phí</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyHocVien"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let stt = 1;
+
+        capNhatHocPhi();
+
+        document.getElementById("chonKhoaHoc").addEventListener("change", function () {
+            capNhatHocPhi();
+        });
+
+        document.getElementById("formDangKy").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let hoTen = document.getElementById("nhapHoTen").value.trim();
+            let gioiTinh = document.getElementById("chonGioiTinh").value;
+            let sdt = document.getElementById("nhapSDT").value.trim();
+            let ngaySinh = document.getElementById("nhapNgaySinh").value;
+            let diaChi = document.getElementById("nhapDiaChi").value.trim();
+            let khoaHoc = document.getElementById("chonKhoaHoc").value;
+            let hocPhi = document.getElementById("nhapHocPhi").value;
+            let anh = document.getElementById("nhapAnh").value;
+
+            xoaLoi();
+            let hopLe = true;
+
+            if (hoTen === "") {
+                document.getElementById("loiHoTen").innerHTML = "Họ tên không được bỏ trống";
+                hopLe = false;
+            } else if (!kiemTraHoTen(hoTen)) {
+                document.getElementById("loiHoTen").innerHTML = "Họ tên phải từ 2 từ trở lên, mỗi từ phải viết hoa chữ cái đầu";
+                hopLe = false;
+            }
+
+            let mauSDT = /^\d{3}-\d{6}$/;
+            if (sdt === "") {
+                document.getElementById("loiSDT").innerHTML = "Số điện thoại không được bỏ trống";
+                hopLe = false;
+            } else if (!mauSDT.test(sdt)) {
+                document.getElementById("loiSDT").innerHTML = "Số điện thoại phải theo mẫu XXX-YYYYYY, ví dụ: 090-123456";
+                hopLe = false;
+            }
+
+            if (ngaySinh === "") {
+                document.getElementById("loiNgaySinh").innerHTML = "Ngày sinh không được bỏ trống";
+                hopLe = false;
+            } else {
+                let tuoi = tinhTuoi(ngaySinh);
+                if (tuoi <= 15 || tuoi >= 18) {
+                    document.getElementById("loiNgaySinh").innerHTML = "Tuổi phải trên 15 và dưới 18";
+                    hopLe = false;
+                }
+            }
+
+            if (diaChi === "") {
+                document.getElementById("loiDiaChi").innerHTML = "Địa chỉ không được bỏ trống";
+                hopLe = false;
+            }
+
+            let mauAnh = /\.(jpg|png|gif)$/i;
+            if (anh === "") {
+                document.getElementById("loiAnh").innerHTML = "Ảnh đại diện không được bỏ trống";
+                hopLe = false;
+            } else if (!mauAnh.test(anh)) {
+                document.getElementById("loiAnh").innerHTML = "Ảnh phải có đuôi .jpg, .png hoặc .gif";
+                hopLe = false;
+            }
+
+            if (hopLe === false) {
+                return;
+            }
+
+            let dongMoi = `
+                <tr>
+                    <td class="text-center">${stt}</td>
+                    <td>${hoTen}</td>
+                    <td class="text-center">${gioiTinh}</td>
+                    <td class="text-center">${sdt}</td>
+                    <td class="text-center">${doiDinhDangNgay(ngaySinh)}</td>
+                    <td>${diaChi}</td>
+                    <td class="text-center">${khoaHoc}</td>
+                    <td class="text-center">${hocPhi}</td>
+                </tr>
+            `;
+
+            document.getElementById("tbodyHocVien").innerHTML += dongMoi;
+            stt++;
+
+            document.getElementById("formDangKy").reset();
+            capNhatHocPhi();
+
+
+            let modal = bootstrap.Modal.getInstance(document.getElementById("modalDangKy"));
+            modal.hide();
+        });
+
+        function capNhatHocPhi() {
+            let khoaHoc = document.getElementById("chonKhoaHoc").value;
+            let hocPhi = "";
+
+            if (khoaHoc === "2 tuần") {
+                hocPhi = "5,000,000";
+            } else if (khoaHoc === "4 tuần") {
+                hocPhi = "8,000,000";
+            } else if (khoaHoc === "6 tuần") {
+                hocPhi = "9,000,000";
+            }
+
+            document.getElementById("nhapHocPhi").value = hocPhi;
+        }
+
+        function xoaLoi() {
+            document.getElementById("loiHoTen").innerHTML = "";
+            document.getElementById("loiSDT").innerHTML = "";
+            document.getElementById("loiNgaySinh").innerHTML = "";
+            document.getElementById("loiDiaChi").innerHTML = "";
+            document.getElementById("loiAnh").innerHTML = "";
+        }
+
+        function kiemTraHoTen(hoTen) {
+            let cacTu = hoTen.split(" ").filter(function (tu) {
+                return tu !== "";
+            });
+
+            if (cacTu.length < 2) {
+                return false;
+            }
+
+            for (let i = 0; i < cacTu.length; i++) {
+                let chuDau = cacTu[i].charAt(0);
+                if (chuDau !== chuDau.toUpperCase()) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        function tinhTuoi(ngaySinh) {
+            let ngaySinhDate = new Date(ngaySinh);
+            let homNay = new Date();
+            let tuoi = homNay.getFullYear() - ngaySinhDate.getFullYear();
+            let thang = homNay.getMonth() - ngaySinhDate.getMonth();
+
+            if (thang < 0 || (thang === 0 && homNay.getDate() < ngaySinhDate.getDate())) {
+                tuoi--;
+            }
+
+            return tuoi;
+        }
+
+        function doiDinhDangNgay(ngay) {
+            let tachNgay = ngay.split("-");
+            return tachNgay[2] + "/" + tachNgay[1] + "/" + tachNgay[0];
+        }
+    </script>
+</body>
+</html>
